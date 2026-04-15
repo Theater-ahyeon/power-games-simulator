@@ -14,7 +14,7 @@
 
 ## 核心系统
 
-### 一、资源管理系统
+### 资源管理系统
 
 资源是权力的基础。本游戏包含8种核心资源类型：
 
@@ -29,7 +29,7 @@
 
 资源之间可以相互转换，但存在效率曲线；同时，某些资源变化会产生延迟效果，模拟现实政治的滞后性。
 
-### 二、派系与忠诚系统
+### 派系与忠诚系统
 
 游戏中有5大政治派系：
 
@@ -43,7 +43,7 @@
 
 每个派系成员都有忠诚度、信任度和恐惧值三个维度。系统会计算角色叛变的概率。
 
-### 三、情报收集系统
+### 情报收集系统
 
 情报是权力游戏的命脉：
 
@@ -52,7 +52,7 @@
 - **情报分析**：评估情报可靠性和反情报风险
 - **反情报行动**：安全排查和反间谍行动
 
-### 四、联盟与背叛系统
+### 联盟与背叛系统
 
 8种条约类型构建复杂的国际和国内关系网：
 
@@ -67,7 +67,7 @@
 
 信任水平会根据行动和事件动态变化。背叛行为将产生连锁反应，影响与其他所有势力的关系。
 
-### 五、角色系统
+### 角色系统
 
 22位独特NPC，每位角色具备：
 
@@ -76,7 +76,7 @@
 - **隐藏动机**：个人目标、秘密关系、背叛倾向
 - **AI决策引擎**：基于行为树和效用计算的智能决策系统
 
-### 六、剧情系统
+### 剧情系统
 
 8个关键剧情节点，每个节点包含3至5个分支选择：
 
@@ -92,50 +92,29 @@
         独裁        民主改革      权力平衡    系统崩溃    外国扶植
 ```
 
-### 七、策略决策系统
+### 策略决策系统
 
 - **决策树**：多层影响链，包含3层以上的因果关系
 - **延迟后果**：某些效果在数回合后才显现
 - **决策分析**：短期收益、长期影响和风险评估
 - **概率结果**：基于计算概率的多样化结果
 
-### 八、多结局系统
-
-8种截然不同的结局：
-
-1. **独裁统治**：掌握所有权力，建立极权政体
-2. **民主改革**：推动制度改革，建立民主体制
-3. **权力平衡**：多方制衡，维持现状
-4. **流亡海外**：失去权力，被迫流亡
-5. **幕后操控**：在暗处操控傀儡政权
-6. **系统崩溃**：政治秩序彻底瓦解
-7. **外国干预**：引入外部势力介入
-8. **个人野心**：牺牲一切实现个人野心
-
-## 设计理念
-
-本游戏从真实历史事件中汲取灵感：
-
-| 历史事件 | 游戏应用 |
-|----------|----------|
-| 水门事件 | 情报战节点中的监控与掩盖机制 |
-| 宫廷政变 | 权力真空期的快速权力转移逻辑 |
-| 2008金融危机 | 经济危机中的系统性失败决策 |
-| 阿拉伯之春 | 激进派系的大规模动员能力 |
-| 冷战间谍活动 | 情报系统中的间谍网络运作 |
-| 颜色革命 | 民主改革路径中的外部影响 |
-| 宪法危机 | 法律框架挑战事件 |
-| 游说政治 | 财富向影响力的转换机制 |
-
 ## 技术架构
 
-### 技术栈
+### 核心框架
 
-- **编程语言**：C++17
-- **构建系统**：CMake 3.20+
-- **数据序列化**：nlohmann_json
-- **AI系统**：行为树 + 效用AI
-- **事件系统**：发布-订阅模式
+- **C++17** 游戏引擎
+- **SDL2** 图形用户界面
+- **nlohmann_json** 数据序列化
+- **行为树** AI系统
+- **效用AI** 决策引擎
+
+### 构建要求
+
+- C++17兼容编译器（MSVC 2019+、GCC 9+、Clang 10+）
+- CMake 3.20+
+- SDL2、SDL2_image、SDL2_ttf、SDL2_mixer
+- nlohmann_json库
 
 ### 项目结构
 
@@ -144,7 +123,7 @@ PowerGame/
 ├── Source/PowerGame/          # 源代码
 │   ├── Core/                  # 游戏框架、事件系统、时间管理
 │   ├── Resources/             # 资源管理系统
-│   ├── Faction/               # 派系、忠诚度、招募系统
+│   ├── Faction/              # 派系、忠诚度、招募系统
 │   ├── Intelligence/          # 间谍网络、分析、反情报
 │   ├── Alliance/              # 条约、信任、背叛机制
 │   ├── Character/             # NPC系统、AI、关系网络
@@ -154,18 +133,19 @@ PowerGame/
 │   ├── UI/                    # 用户界面面板
 │   ├── Data/                  # 存档管理、序列化
 │   ├── AI/                    # 行为树、效用AI
+│   ├── GUI/                   # SDL2图形界面
+│   ├── Audio/                 # 音频系统
 │   └── Game/                  # 主程序入口
-├── Data/                      # JSON数据文件
-│   ├── Characters/            # 角色定义
-│   ├── Stories/               # 剧情节点数据
-│   ├── Endings/               # 结局条件
-│   └── Config/                # 游戏配置
 ├── Content/                   # 游戏资源
-│   └── Art/                   # 美术资源
-│       └── UI/                # 用户界面美术
-├── Tests/                     # 单元测试和集成测试
-├── Tools/                     # Python分析工具
-├── Docs/                      # 项目文档
+│   ├── Art/                   # 美术资源
+│   │   ├── Characters/         # 角色肖像
+│   │   ├── Scenes/             # 场景背景
+│   │   ├── UI/                 # UI元素
+│   │   └── Prototypes/          # HTML原型
+│   └── Audio/                  # 音频配置
+├── Data/                      # JSON数据文件
+├── Tools/                      # 资源生成工具
+├── Docs/                      # 文档
 └── CMakeLists.txt             # 构建配置
 ```
 
@@ -174,155 +154,33 @@ PowerGame/
 ### 系统要求
 
 - **操作系统**：Windows 10/11、Linux、macOS
-- **编译器**：C++17兼容（MSVC 2019+、GCC 9+、Clang 10+）
+- **编译器**：C++17兼容
 - **构建工具**：CMake 3.20+
 - **磁盘空间**：至少500MB可用空间
 - **内存**：推荐8GB以上
 
 ### 构建步骤
 
-#### Windows系统（使用MSVC）
-
 ```bash
 # 克隆仓库
 git clone https://github.com/Theater-ahyeon/power-games-simulator.git
 cd power-games-simulator
 
-# 使用CMake配置并构建
+# Windows (MSVC)
 cmake -B build -G "Visual Studio 17 2022"
 cmake --build build --config Release
 
-# 或使用项目提供的构建脚本
-.\build.bat
-```
-
-#### Linux/macOS系统
-
-```bash
-# 克隆仓库
-git clone https://github.com/Theater-ahyeon/power-games-simulator.git
-cd power-games-simulator
-
-# 使用CMake配置并构建
+# Linux/macOS
 cmake -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build
 
-# 或使用项目提供的构建脚本
-chmod +x build.sh
-./build.sh
-```
-
-### 依赖说明
-
-项目使用CMake的FetchContent功能自动下载nlohmann_json库，无需手动安装第三方依赖。
-
-### SDL2 GUI支持（可选）
-
-如需构建带有图形界面的版本，需要安装SDL2库：
-
-#### Windows
-
-下载并安装SDL2开发库：
-
-```bash
-# 使用vcpkg
-vcpkg install sdl2:x64-windows sdl2-image:x64-windows sdl2-ttf:x64-windows sdl2-mixer:x64-windows
-
-# 或手动下载
-# https://github.com/libsdl-org/SDL/releases
-# https://github.com/libsdl-org/SDL_image/releases
-# https://github.com/libsdl-org/SDL_ttf/releases
-# https://github.com/libsdl-org/SDL_mixer/releases
-```
-
-#### Linux (Ubuntu/Debian)
-
-```bash
-sudo apt-get install libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev libsdl2-mixer-dev
-```
-
-#### macOS
-
-```bash
-brew install sdl2 sdl2_image sdl2_ttf sdl2_mixer
-```
-
-#### 构建GUI版本
-
-```bash
-cmake -B build -G "Visual Studio 17 2022" -DUSE_GUI=ON -DSDL2_SUPPORT=ON
-cmake --build build --config Release
-```
-
-默认构建为控制台版本，如需GUI版本，请定义预处理宏 `USE_GUI` 和 `SDL2_SUPPORT`。
-
-### MiniMax API集成（可选）
-
-如需使用AI生成美术资源，需配置MiniMax API密钥：
-
-```bash
-export MINIMAX_API_KEY="your-api-key-here"
-python Tools/AssetGenerator/minimax_asset_generator.py
-```
-
-API密钥申请地址：https://platform.minimax.chat/
-
-## 使用方法
-
-### 运行游戏
-
-构建完成后，可执行文件位于：
-
-```bash
-# Windows
-.\build\bin\PowerGame.exe
-
-# Linux/macOS
+# 运行
 ./build/bin/PowerGame
 ```
-
-### 运行测试
-
-```bash
-# Windows
-.\build\bin\PowerGameTests.exe
-
-# Linux/macOS
-./build/bin/PowerGameTests
-```
-
-### Python工具（可选）
-
-```bash
-# 安装依赖
-pip install numpy
-
-# 运行数据分析工具
-python Tools/DataAnalyzer/data_analyzer.py
-
-# 运行AI训练工具
-python Tools/AITrainer/ai_trainer.py
-```
-
-### 游戏操作指南
-
-1. **主菜单**：新建游戏、加载存档、查看设置、退出游戏
-2. **回合流程**：每个回合包含行动阶段、结算阶段和回合结束阶段
-3. **资源管理**：通过资源面板查看和分配资源
-4. **派系交互**：与其他派系进行谈判、结盟或对抗
-5. **情报收集**：部署间谍网络，收集对手信息
-6. **剧情决策**：在关键节点做出选择，影响游戏走向
 
 ## 美术资源规范
 
 本项目的美术资源严格遵循"主权情报"设计系统（The Sovereign Intelligence Design System）：
-
-### 设计原则
-
-- **冷峻美学**：模拟高级别战争指挥室的冷硬环境
-- **建筑不对称**：采用权重侧边栏和模块化数据集群
-- **高对比度排版**：衬线字体与几何无衬线字体的对比运用
-- **零圆角设计**：所有元素采用0px圆角，强化战争室美学
 
 ### 色彩体系
 
@@ -332,26 +190,24 @@ python Tools/AITrainer/ai_trainer.py
 - **强调色二**：#e9c349（金色，威望/重要）
 - **警告色**：#ffb4ac（绯红，威胁/冲突）
 
-### 排版规范
+### 设计原则
 
-- **标题字体**：Newsreader（衬线体，权威感）
-- **正文字体**：Inter（无衬线，高可读性）
-- **数据字体**：Space Grotesk（等宽，数据展示）
+- **零圆角设计**：所有元素采用0px圆角，强化战争室美学
+- **高对比度排版**：衬线字体与几何无衬线字体的对比运用
+- **建筑不对称**：采用权重侧边栏和模块化数据集群
+- **左对齐文本**：专业文档风格
 
-### 文件命名规范
+## 资源生成工具
 
-所有美术资源文件采用以下命名规范：
+使用MiniMax API生成美术资源：
 
+```bash
+# 设置API密钥
+export MINIMAX_API_KEY="your-api-key"
+
+# 运行资源生成器
+python Tools/AssetGenerator/game_asset_generator.py
 ```
-<类别>_<具体内容>_<变体>.txt
-```
-
-示例：
-
-- `title_screen.txt`（标题画面）
-- `main_dashboard.txt`（主仪表盘）
-- `resource_panel.txt`（资源面板）
-- `intelligence_network.txt`（情报网络）
 
 ## 版本路线图
 
@@ -363,6 +219,10 @@ python Tools/AITrainer/ai_trainer.py
 - ✅ 8种结局
 - ✅ 基础UI框架
 - ✅ ASCII艺术界面
+- ✅ SDL2 GUI框架
+- ✅ 教程系统
+- ✅ 成就追踪系统
+- ✅ 资源生成工具
 
 ### v1.1（计划中）
 
@@ -388,15 +248,6 @@ python Tools/AITrainer/ai_trainer.py
 - ⏳ 社区工坊
 - ⏳ 跨平台移动端支持
 
-## 贡献指南
-
-欢迎提交Issue和Pull Request。请确保：
-
-1. 代码遵循现有代码风格
-2. 添加适当的单元测试
-3. 更新相关文档
-4. 提交信息清晰明了
-
 ## 许可证
 
 本项目采用MIT许可证 - 详见LICENSE文件。
@@ -410,10 +261,6 @@ python Tools/AITrainer/ai_trainer.py
 - **GitHub仓库**：https://github.com/Theater-ahyeon/power-games-simulator
 - **问题反馈**：通过GitHub Issues提交
 - **功能建议**：通过GitHub Discussions讨论
-
-## 致谢
-
-感谢所有为该项目做出贡献的开发者。本游戏的设计灵感来源于历史上真实的政治事件和权力博弈案例，旨在为玩家提供一款富有深度和策略性的政治模拟游戏。
 
 ---
 
