@@ -9,6 +9,11 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 
+# Set Windows subsystem for GUI application
+if(WIN32)
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SUBSYSTEM:WINDOWS")
+endif()
+
 include(FetchContent)
 FetchContent_Declare(
     nlohmann_json
@@ -35,19 +40,13 @@ file(GLOB_RECURSE POWERGAME_SOURCES
     "Source/PowerGame/Audio/*.cpp"
 )
 
-# Add explicit source files for GUI TutorialSystem
-set(GUI_TUTORIAL_SOURCES
-    "Source/PowerGame/GUI/TutorialSystem.h"
-    "Source/PowerGame/GUI/TutorialSystem.cpp"
-)
-
-# Add explicit source files for Game systems
-set(GAME_SYSTEM_SOURCES
-    "Source/PowerGame/Game/AchievementSystem.h"
-    "Source/PowerGame/Game/AchievementSystem.cpp"
-    "Source/PowerGame/Game/GameStateManager.h"
-    "Source/PowerGame/Game/GameStateManager.cpp"
-)
+# Windows resource file for icon
+if(WIN32)
+    set(WINDOWS_RESOURCES "${CMAKE_SOURCE_DIR}/Resources/PowerGame.rc")
+    if(EXISTS ${WINDOWS_RESOURCES})
+        list(APPEND POWERGAME_SOURCES ${WINDOWS_RESOURCES})
+    endif()
+endif()
 
 add_executable(PowerGame ${POWERGAME_SOURCES})
 
@@ -56,6 +55,7 @@ target_include_directories(PowerGame PRIVATE
     ${CMAKE_SOURCE_DIR}/ThirdParty
 )
 
+# Find packages
 find_package(SDL2 REQUIRED)
 find_package(SDL2_image REQUIRED)
 find_package(SDL2_ttf REQUIRED)
@@ -71,19 +71,62 @@ target_link_libraries(PowerGame PRIVATE
 
 if(MSVC)
     target_compile_options(PowerGame PRIVATE /utf-8 /W3 /permissive- /Zc:__cplusplus)
+    # Set Windows subsystem but allow console for debugging
+    set_target_properties(PowerGame PROPERTIES
+        LINK_FLAGS "/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup"
+    )
 else()
     target_compile_options(PowerGame PRIVATE -Wall -Wextra -Wno-unused-parameter)
+endif()
+
+# Copy content files to build directory
+add_custom_command(TARGET PowerGame POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+    ${CMAKE_SOURCE_DIR}/Content $<TARGET_FILE_DIR:PowerGame>/Content
+)
+
+# Copy SDL2 DLLs on Windows
+if(WIN32)
+    add_custom_command(TARGET PowerGame POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        $<TARGET_FILE:SDL2::SDL2> $<TARGET_FILE_DIR:PowerGame>
+    )
+    add_custom_command(TARGET PowerGame POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        $<TARGET_FILE:SDL2::SDL2_image> $<TARGET_FILE_DIR:PowerGame>
+    )
+    add_custom_command(TARGET PowerGame POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        $<TARGET_FILE:SDL2::SDL2_ttf> $<TARGET_FILE_DIR:PowerGame>
+    )
+    add_custom_command(TARGET PowerGame POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        $<TARGET_FILE:SDL2::SDL2_mixer> $<TARGET_FILE_DIR:PowerGame>
+    )
 endif()
 
 enable_testing()
 
 file(GLOB_RECURSE TEST_SOURCES "Tests/*.cpp")
-add_executable(PowerGameTests ${TEST_SOURCES})
-target_include_directories(PowerGameTests PRIVATE
-    ${CMAKE_SOURCE_DIR}/Source
-    ${CMAKE_SOURCE_DIR}/ThirdParty
+if(TEST_SOURCES)
+    add_executable(PowerGameTests ${TEST_SOURCES})
+    target_include_directories(PowerGameTests PRIVATE
+        ${CMAKE_SOURCE_DIR}/Source
+        ${CMAKE_SOURCE_DIR}/ThirdParty
+    )
+    target_link_libraries(PowerGameTests PRIVATE
+        nlohmann_json::nlohmann_json
+    )
+    add_test(NAME PowerGameTests COMMAND PowerGameTests)
+endif()
+
+# Install targets
+install(TARGETS PowerGame
+    RUNTIME DESTINATION bin
+    LIBRARY DESTINATION lib
+    ARCHIVE DESTINATION lib
 )
-target_link_libraries(PowerGameTests PRIVATE
-    nlohmann_json::nlohmann_json
-)
-add_test(NAME PowerGameTests COMMAND PowerGameTests)
+
+install(DIRECTORY Content/ DESTINATION Content)
+install(DIRECTORY Docs/ DESTINATION Docs)
+install(FILES README.md README_中文.md LICENSE DESTINATION .)
