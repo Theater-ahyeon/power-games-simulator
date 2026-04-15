@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Game - Scene & UI Design System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,wght@0,400;0,600;1,400&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --background: #111316;
+            --surface-lowest: #0c0e11;
+            --surface-low: #1a1c20;
+            --surface: #111316;
+            --surface-high: #222529;
+            --primary: #00daf3;
+            --secondary: #e9c349;
+            --tertiary: #ffb4ac;
+            --text-primary: #ffffff;
+            --text-secondary: #c4c6cf;
+            --outline: #45464d;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 40px;
+        }
+        
+        h1 {
+            font-family: 'Newsreader', serif;
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            font-family: 'Newsreader', serif;
+            font-size: 1.8rem;
+            color: var(--secondary);
+            margin: 40px 0 20px 0;
+            border-bottom: 1px solid var(--outline);
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            font-size: 1.2rem;
+            color: var(--text-primary);
+            margin: 20px 0 10px 0;
+        }
+        
+        .container { max-width: 1400px; margin: 0 auto; }
+        
+        /* 场景卡片 */
+        .scene-card {
+            background: var(--surface-low);
+            padding: 24px;
+            margin: 16px 0;
+        }
+        
+        .scene-preview {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, var(--surface-lowest) 0%, var(--surface-high) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+        
+        .scene-placeholder {
+            font-family: 'Space Grotesk', monospace;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        /* UI面板 */
+        .ui-panel {
+            background: var(--surface-low);
+            padding: 24px;
+            margin: 16px 0;
+        }
+        
+        .ui-panel-header {
+            background: var(--surface-high);
+            padding: 12px 16px;
+            margin: -24px -24px 16px -24px;
+        }
+        
+        .ui-panel-title {
+            font-family: 'Space Grotesk', monospace;
+            font-size: 0.85rem;
+            color: var(--primary);
+        }
+        
+        /* 按钮 */
+        .button-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 20px 0;
+        }
+        
+        .btn {
+            padding: 12px 24px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .btn-primary {
+            background: var(--primary);
+            color: var(--background);
+        }
+        
+        .btn-primary:hover {
+            background: #00b8cc;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            border: 1px solid var(--secondary);
+            color: var(--secondary);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--secondary);
+            color: var(--background);
+        }
+        
+        .btn-danger {
+            background: transparent;
+            border: 1px solid var(--tertiary);
+            color: var(--tertiary);
+        }
+        
+        .btn-danger:hover {
+            background: var(--tertiary);
+            color: var(--background);
+        }
+        
+        /* 进度条 */
+        .progress-demo {
+            margin: 20px 0;
+        }
+        
+        .progress-bar {
+            background: var(--surface-lowest);
+            height: 8px;
+            margin: 8px 0;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: var(--primary);
+        }
+        
+        .progress-fill.gold {
+            background: linear-gradient(90deg, var(--secondary), var(--tertiary);
+        }
+        
+        /* 资源显示 */
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin: 20px 0;
+        }
+        
+        .resource-item {
+            background: var(--surface-high);
+            padding: 16px;
+        }
+        
+        .resource-name {
+            font-family: 'Space Grotesk', monospace;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+        
+        .resource-value {
+            font-family: 'Space Grotesk', monospace;
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+        
+        /* 通知 */
+        .notification {
+            background: var(--surface-high);
+            border-left: 4px solid var(--primary);
+            padding: 16px;
+            margin: 12px 0;
+        }
+        
+        .notification.warning {
+            border-left-color: var(--tertiary);
+        }
+        
+        .notification.gold {
+            border-left-color: var(--secondary);
+        }
+        
+        .notification-title {
+            font-family: 'Space Grotesk', monospace;
+            font-size: 0.9rem;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+        
+        .notification.warning .notification-title {
+            color: var(--tertiary);
+        }
+        
+        /* 输入框 */
+        .input-demo {
+            margin: 16px 0;
+        }
+        
+        .input-field {
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid var(--outline);
+            padding: 12px 0;
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+        }
+        
+        .input-field:focus {
+            outline: none;
+            border-bottom-color: var(--primary);
+        }
+        
+        .input-label {
+            font-family: 'Space Grotesk', monospace;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-bottom: 4px;
+        }
+        
+        /* 图标网格 */
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            gap: 16px;
+            margin: 20px 0;
+        }
+        
+        .icon-item {
+            background: var(--surface-low);
+            padding: 16px;
+            text-align: center;
+        }
+        
+        .icon-placeholder {
+            width: 48px;
+            height: 48px;
+            background: var(--surface-high);
+            margin: 0 auto 8px;
+        }
+        
+        .icon-label {
+            font-family: 'Space Grotesk', monospace;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+        
+        /* 代码块 */
+        pre {
+            background: var(--surface-lowest);
+            padding: 20px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-family: 'Space Grotesk', monospace;
+            font-size: 0.85rem;
+        }
+        
+        code {
+            background: var(--surface-lowest);
+            padding: 2px 6px;
+            font-family: 'Space Grotesk', monospace;
+            font-size: 0.9em;
+        }
+        
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .resource-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>主权情报设计系统 - 场景与UI规范</h1>
+        <p style="color: var(--text-secondary); margin-bottom: 30px;">
+            基于"The Sovereign Intelligence"设计理念的场景和用户界面设计系统
+        </p>
+        
+        <!-- 场景示例 -->
+        <section>
+            <h2>场景设计</h2>
+            
+            <div class="scene-card">
+                <div class="scene-preview">
+                    <span class="scene-placeholder">[战争室场景 16:9]</span>
+                </div>
+                <h3>战争指挥室 (War Room)</h3>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                    高科技指挥中心，多屏幕显示政治数据和地图，深色氛围，青色照明
+                </p>
+            </div>
+            
+            <div class="scene-card">
+                <div class="scene-preview">
+                    <span class="scene-placeholder">[议会场景 16:9]</span>
+                </div>
+                <h3>议会大厅 (Parliament)</h3>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                    宏伟的议会大厦，庄严的政治权力象征
+                </p>
+            </div>
+        </section>
+        
+        <!-- UI组件 -->
+        <section>
+            <h2>UI组件</h2>
+            
+            <h3>按钮样式</h3>
+            <div class="button-grid">
+                <button class="btn btn-primary">主要操作</button>
+                <button class="btn btn-secondary">次要操作</button>
+                <button class="btn btn-danger">危险操作</button>
+            </div>
+            
+            <h3>进度条</h3>
+            <div class="progress-demo">
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 85%;"></div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill gold" style="width: 65%;"></div>
+                </div>
+            </div>
+            
+            <h3>资源显示</h3>
+            <div class="resource-grid">
+                <div class="resource-item">
+                    <div class="resource-name">政治资本</div>
+                    <div class="resource-value">85</div>
+                </div>
+                <div class="resource-item">
+                    <div class="resource-name">势力影响力</div>
+                    <div class="resource-value" style="color: var(--secondary);">70</div>
+                </div>
+                <div class="resource-item">
+                    <div class="resource-name">情报信息</div>
+                    <div class="resource-value" style="color: var(--tertiary);">45</div>
+                </div>
+            </div>
+            
+            <h3>通知系统</h3>
+            <div class="notification">
+                <div class="notification-title">系统通知</div>
+                <p style="font-size: 0.9rem;">重要情报已更新</p>
+            </div>
+            <div class="notification warning">
+                <div class="notification-title">⚠ 警告</div>
+                <p style="font-size: 0.9rem;">检测到潜在威胁</p>
+            </div>
+            <div class="notification gold">
+                <div class="notification-title">★ 成就解锁</div>
+                <p style="font-size: 0.9rem;">您获得了新的成就</p>
+            </div>
+            
+            <h3>输入框</h3>
+            <div class="input-demo">
+                <div class="input-label">输入指挥官代号</div>
+                <input type="text" class="input-field" placeholder="输入内容...">
+            </div>
+            
+            <h3>图标系统</h3>
+            <div class="icon-grid">
+                <div class="icon-item">
+                    <div class="icon-placeholder"></div>
+                    <div class="icon-label">资源</div>
+                </div>
+                <div class="icon-item">
+                    <div class="icon-placeholder"></div>
+                    <div class="icon-label">派系</div>
+                </div>
+                <div class="icon-item">
+                    <div class="icon-placeholder"></div>
+                    <div class="icon-label">行动</div>
+                </div>
+                <div class="icon-item">
+                    <div class="icon-placeholder"></div>
+                    <div class="icon-label">情报</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 技术规范 -->
+        <section>
+            <h2>技术规范</h2>
+            <pre><code>
+场景图像规范:
+- 格式: PNG/JPG
+- 分辨率: 1920x1080 (16:9)
+- 色彩空间: sRGB
+- 文件命名: {场景ID}.png
+
+UI元素规范:
+- 图标: PNG (透明背景), 256x256
+- 按钮: SVG 或 PNG
+- 进度条: CSS实现
+- 颜色使用CSS变量
+
+音频规范:
+- 背景音乐: MP3/OGG, 44.1kHz, 128kbps+
+- 音效: WAV/MP3, 44.1kHz, 192kbps+
+- 语音: MP3, 22.05kHz, 64kbps
+            </code></pre>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,245 @@
+{
+  "audio_configuration": {
+    "project_name": "Power Game: The Art of Political Intrigue",
+    "design_system": "Sovereign Intelligence Design System",
+    "version": "1.0.0"
+  },
+  
+  "background_music": {
+    "title_screen": {
+      "id": "bgm_title",
+      "name": "Title Screen Theme",
+      "description": "戏剧性的政治惊悚主题曲",
+      "style": "dramatic orchestral",
+      "mood": "tense mysterious",
+      "duration_seconds": 120,
+      "tempo": "medium-slow",
+      "key": "D minor",
+      "instruments": [
+        "strings",
+        "piano",
+        "synthesizer",
+        "harp"
+      ],
+      "prompt_for_generation": "Create a dramatic political thriller soundtrack with mysterious tension, cinematic orchestral music with synthesizer elements"
+    },
+    
+    "gameplay_calm": {
+      "id": "bgm_gameplay_calm",
+      "name": "Gameplay Ambient",
+      "description": "平静的游戏环境音乐",
+      "style": "ambient electronic",
+      "mood": "neutral contemplative",
+      "duration_seconds": 300,
+      "tempo": "slow ambient",
+      "key": "E minor",
+      "instruments": [
+        "soft piano",
+        "ambient pads",
+        "subtle strings"
+      ],
+      "prompt_for_generation": "Ambient electronic music with subtle political atmosphere, calm contemplative mood"
+    },
+    
+    "gameplay_tense": {
+      "id": "bgm_gameplay_tense",
+      "name": "Strategic Tension",
+      "description": "紧张局势背景音乐",
+      "style": "tension building",
+      "mood": "urgent suspenseful",
+      "duration_seconds": 180,
+      "tempo": "building",
+      "key": "C minor",
+      "instruments": [
+        "strings",
+        "percussion",
+        "synthesizer"
+      ],
+      "prompt_for_generation": "Tense building electronic orchestral music with suspenseful atmosphere, political intrigue mood"
+    },
+    
+    "crisis": {
+      "id": "bgm_crisis",
+      "name": "Crisis Alert",
+      "description": "危机警报音乐",
+      "style": "urgent dramatic",
+      "mood": "crisis warning",
+      "duration_seconds": 120,
+      "tempo": "fast urgent",
+      "key": "A minor",
+      "instruments": [
+        "percussion",
+        "brass",
+        "strings"
+      ],
+      "prompt_for_generation": "Urgent dramatic crisis music with warning tones, high tension alert atmosphere"
+    },
+    
+    "victory": {
+      "id": "bgm_victory",
+      "name": "Victory Fanfare",
+      "description": "胜利凯旋音乐",
+      "style": "triumphant orchestral",
+      "mood": "victorious triumphant",
+      "duration_seconds": 90,
+      "tempo": "triumphant",
+      "key": "D major",
+      "instruments": [
+        "full orchestra",
+        "choir",
+        "brass"
+      ],
+      "prompt_for_generation": "Triumphant victorious orchestral fanfare with choir, epic political victory mood"
+    },
+    
+    "defeat": {
+      "id": "bgm_defeat",
+      "name": "Defeat Theme",
+      "description": "失败主题音乐",
+      "style": "somber melancholic",
+      "mood": "defeat somber",
+      "duration_seconds": 120,
+      "tempo": "slow mournful",
+      "key": "B minor",
+      "instruments": [
+        "solo piano",
+        "cello",
+        "strings"
+      ],
+      "prompt_for_generation": "Melancholic somber piano with strings, political defeat atmosphere"
+    }
+  },
+  
+  "sound_effects": {
+    "ui_interactions": {
+      "button_click": {
+        "id": "sfx_button_click",
+        "name": "UI Button Click",
+        "description": "按钮点击音效",
+        "duration_ms": 200,
+        "prompt_for_generation": "Clean subtle button click sound"
+      },
+      
+      "menu_select": {
+        "id": "sfx_menu_select",
+        "name": "Menu Selection",
+        "description": "菜单选择音效",
+        "duration_ms": 300,
+        "prompt_for_generation": "Soft selection sound for menu navigation"
+      },
+      
+      "notification": {
+        "id": "sfx_notification",
+        "name": "Notification Alert",
+        "description": "通知提示音",
+        "duration_ms": 500,
+        "prompt_for_generation": "Subtle notification chime with political theme"
+      }
+    },
+    
+    "game_events": {
+      "decision_made": {
+        "id": "sfx_decision",
+        "name": "Critical Decision",
+        "description": "关键决策音效",
+        "duration_ms": 800,
+        "prompt_for_generation": "Dramatic decision sound with political weight"
+      },
+      
+      "alliance_formed": {
+        "id": "sfx_alliance",
+        "name": "Alliance Formed",
+        "description": "联盟建立音效",
+        "duration_ms": 1000,
+        "prompt_for_generation": "Positive diplomatic sound with orchestral elements"
+      },
+      
+      "betrayal": {
+        "id": "sfx_betrayal",
+        "name": "Betrayal Alert",
+        "description": "背叛警告音效",
+        "duration_ms": 1200,
+        "prompt_for_generation": "Dark ominous betrayal warning sound"
+      },
+      
+      "crisis_alert": {
+        "id": "sfx_crisis",
+        "name": "Crisis Alert",
+        "description": "危机警报音效",
+        "duration_ms": 1500,
+        "prompt_for_generation": "Urgent crisis alarm with dramatic tension"
+      }
+    },
+    
+    "character_voicelines": {
+      "chen_weiming": {
+        "id": "voice_chen",
+        "name": "陈伟明语音",
+        "gender": "male",
+        "age_range": "elderly",
+        "accent": "formal",
+        "prompt_for_tts": "Voice actor for 62-year-old conservative politician, authoritative, calculating tone"
+      },
+      
+      "sarah_jenkins": {
+        "id": "voice_sarah",
+        "name": "莎拉·詹金斯语音",
+        "gender": "female",
+        "age_range": "middle-aged",
+        "accent": "professional",
+        "prompt_for_tts": "Voice actress for 45-year-old liberal reformer, intelligent passionate tone"
+      },
+      
+      "commander_fire": {
+        "id": "voice_fire",
+        "name": "火焰指挥官语音",
+        "gender": "male",
+        "age_range": "middle-aged",
+        "accent": "intense",
+        "prompt_for_tts": "Voice actor for 40-year-old revolutionary leader, intense passionate tone"
+      }
+    }
+  },
+  
+  "technical_specifications": {
+    "audio_format": {
+      "background_music": {
+        "format": "MP3",
+        "sample_rate": "44100 Hz",
+        "bitrate": "192 kbps",
+        "channels": "Stereo"
+      },
+      
+      "sound_effects": {
+        "format": "MP3",
+        "sample_rate": "44100 Hz",
+        "bitrate": "192 kbps",
+        "channels": "Mono"
+      },
+      
+      "voice_lines": {
+        "format": "MP3",
+        "sample_rate": "22050 Hz",
+        "bitrate": "64 kbps",
+        "channels": "Mono"
+      }
+    },
+    
+    "naming_convention": {
+      "pattern": "{type}_{category}_{name}",
+      "examples": [
+        "bgm_gameplay_tense.mp3",
+        "sfx_notification.mp3",
+        "voice_chen_intro.mp3"
+      ]
+    }
+  },
+  
+  "integration_notes": [
+    "所有音频文件应放在 Content/Audio/ 目录下",
+    "背景音乐使用 SDL_mixer Music 模块播放",
+    "音效使用 SDL_mixer Chunk 模块播放",
+    "语音使用 TTS API 生成或手动录制",
+    "遵循主权情报设计系统的紧张氛围"
+  ]
+}
