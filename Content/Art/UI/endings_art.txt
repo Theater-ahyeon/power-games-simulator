@@ -1,0 +1,91 @@
+
+    ╔══════════════════════════════════════════════════════════════════════════════╗
+    ║                                                                              ║
+    ║   ⚔  DICTATORSHIP  -  "The Iron Throne"                                    ║
+    ║                                                                              ║
+    ║        ██████╗ █████╗ ██████╗ ███████╗███████╗██████╗                        ║
+    ║       ██╔════╝██╔══██╗██╔══██╗██╔════╝██╔════╝██╔══██╗                       ║
+    ║       ██║     ███████║██████╔╝███████╗█████╗  ██████╔╝                       ║
+    ║       ██║     ██╔══██║██╔═══╝ ╚════██║██╔══╝  ██╔══██╗                       ║
+    ║       ╚██████╗██║  ██║██║     ███████║███████╗██║  ██║                       ║
+    ║        ╚═════╝╚═╝  ╚═╝╚═╝     ╚══════╝╚══════╝╚═╝  ╚═╝                       ║
+    ║                                                                              ║
+    ║   Through ruthless consolidation of power, you have established              ║
+    ║   an unbreakable grip on the nation. The people whisper in fear,             ║
+    ║   but the trains run on time.                                                ║
+    ║                                                                              ║
+    ╚══════════════════════════════════════════════════════════════════════════════╝
+
+    ╔══════════════════════════════════════════════════════════════════════════════╗
+    ║                                                                              ║
+    ║   🏛  DEMOCRATIC REFORM  -  "The Dawn of Democracy"                        ║
+    ║                                                                              ║
+    ║       ██████╗ ██████╗ ███████╗   ██████╗ ███████╗██╗   ██╗                   ║
+    ║       ██╔══██╗██╔══██╗██╔════╝   ██╔══██╗██╔════╝╚██╗ ██╔╝                   ║
+    ║       ██████╔╝██████╔╝█████╗     ██████╔╝█████╗   ╚████╔╝                    ║
+    ║       ██╔═══╝ ██╔══██╗██╔══╝     ██╔══██╗██╔══╝    ╚██╔╝                     ║
+    ║       ██║     ██║  ██║███████╗   ██║  ██║███████╗   ██║                      ║
+    ║       ╚═╝     ╚═╝  ╚═╝╚══════╝   ╚═╝  ╚═╝╚══════╝   ╚═╝                      ║
+    ║                                                                              ║
+    ║   Against all odds, you have steered the nation toward democratic            ║
+    ║   reform. Free elections, civil liberties, and the rule of law prevail.      ║
+    ║                                                                              ║
+    ╚══════════════════════════════════════════════════════════════════════════════╝
+
+    ╔══════════════════════════════════════════════════════════════════════════════╗
+    ║                                                                              ║
+    ║   ⚖  POWER BALANCE  -  "The Grand Equilibrium"                             ║
+    ║                                                                              ║
+    ║   You have achieved a stable balance of power between all factions.          ║
+    ║   No single group dominates, and compromise has become the currency          ║
+    ║   of politics. The system holds, but tensions simmer beneath.                ║
+    ║                                                                              ║
+    ╚══════════════════════════════════════════════════════════════════════════════╝
+
+    ╔══════════════════════════════════════════════════════════════════════════════╗
+    ║                                                                              ║
+    ║   💀 EXILE/FAILURE  -  "The Fallen Leader"                                  ║
+    ║                                                                              ║
+    ║   Your ambitions exceeded your grasp. Stripped of power, wealth,             ║
+    ║   and influence, your political career has ended in disgrace.                ║
+    ║                                                                              ║
+    ╚══════════════════════════════════════════════════════════════════════════════╝
+
+    ╔══════════════════════════════════════════════════════════════════════════════╗
+    ║                                                                              ║
+    ║   🕯  SHADOW CONTROL  -  "The Puppet Master"                                ║
+    ║                                                                              ║
+    ║   While others hold visible power, you control from the shadows.             ║
+    ║   Your network of informants and strategic alliances gives you               ║
+    ║   influence that transcends any official position.                           ║
+    ║                                                                              ║
+    ╚══════════════════════════════════════════════════════════════════════════════╝
+
+    ╔══════════════════════════════════════════════════════════════════════════════╗
+    ║                                                                              ║
+    ║   💥 SYSTEM COLLAPSE  -  "The House of Cards"                               ║
+    ║                                                                              ║
+    ║   The political system has collapsed under its own contradictions.           ║
+    ║   Factions have turned on each other, institutions have failed,              ║
+    ║   and chaos reigns. The nation teeters on the brink.                         ║
+    ║                                                                              ║
+    ╚══════════════════════════════════════════════════════════════════════════════╝
+
+    ╔══════════════════════════════════════════════════════════════════════════════╗
+    ║                                                                              ║
+    ║   🌍 FOREIGN INTERVENTION  -  "The External Hand"                            ║
+    ║                                                                              ║
+    ║   Foreign powers have decisively intervened in domestic affairs,             ║
+    ║   reshaping the political landscape to serve their interests.                ║
+    ║                                                                              ║
+    ╚══════════════════════════════════════════════════════════════════════════════╝
+
+    ╔══════════════════════════════════════════════════════════════════════════════╗
+    ║                                                                              ║
+    ║   👑 PERSONAL AMBITION  -  "The Self-Made Sovereign"                        ║
+    ║                                                                              ║
+    ║   Your personal ambition has been fulfilled beyond your wildest dreams.      ║
+    ║   Wealth, power, and influence are yours in abundance.                       ║
+    ║   But at what cost?                                                          ║
+    ║                                                                              ║
+    ╚══════════════════════════════════════════════════════════════════════════════╝

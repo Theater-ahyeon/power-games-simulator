@@ -1,0 +1,72 @@
+{
+  "gameConfig": {
+    "maxTurns": 100,
+    "startingResources": {
+      "PoliticalCapital": 50,
+      "Influence": 30,
+      "Information": 20,
+      "Wealth": 40,
+      "Military": 10,
+      "Reputation": 50,
+      "Legitimacy": 60,
+      "PublicSupport": 45
+    },
+    "resourceMaximums": {
+      "PoliticalCapital": 100,
+      "Influence": 100,
+      "Information": 100,
+      "Wealth": 100,
+      "Military": 100,
+      "Reputation": 100,
+      "Legitimacy": 100,
+      "PublicSupport": 100
+    },
+    "regenerationRates": {
+      "PoliticalCapital": 2.0,
+      "Influence": 1.5,
+      "Information": 1.0,
+      "Wealth": 2.0,
+      "Military": 0.5,
+      "Reputation": 0.0,
+      "Legitimacy": 0.0,
+      "PublicSupport": 1.0
+    }
+  },
+  "factionConfig": {
+    "initialFactions": [
+      {"id": "conservatives", "name": "Conservative Alliance", "ideology": "Conservative", "initialPower": 35},
+      {"id": "liberals", "name": "Liberal Coalition", "ideology": "Liberal", "initialPower": 25},
+      {"id": "neutrals", "name": "Central Bloc", "ideology": "Neutral", "initialPower": 20},
+      {"id": "radicals", "name": "Radical Front", "ideology": "Radical", "initialPower": 15},
+      {"id": "opportunists", "name": "Opportunist Circle", "ideology": "Opportunist", "initialPower": 10}
+    ]
+  },
+  "intelligenceConfig": {
+    "baseSecurityLevels": {
+      "conservatives": 40,
+      "liberals": 35,
+      "neutrals": 30,
+      "radicals": 45,
+      "opportunists": 25
+    },
+    "spyExposureRate": 0.5,
+    "disinformationChance": 0.15,
+    "intelExpiryTurns": 30
+  },
+  "endingConfig": {
+    "minimumScore": 60,
+    "resourceWeight": 0.35,
+    "factionWeight": 0.25,
+    "decisionWeight": 0.40
+  },
+  "historicalReferences": [
+    {"event": "Watergate Scandal", "application": "Intelligence War story node - covert surveillance and cover-up mechanics"},
+    {"event": "Palace Coup Dynamics", "application": "Power Vacuum and Constitutional Crisis nodes - rapid power transfer logic"},
+    {"event": "2008 Financial Crisis", "application": "Economic Crisis node - systemic failure and bailout decisions"},
+    {"event": "Arab Spring", "application": "Radical faction events - mass mobilization and regime change"},
+    {"event": "Cold War Espionage", "application": "Intelligence system - spy networks and counter-intelligence"},
+    {"event": "Color Revolutions", "application": "Democratic Reform ending path - foreign influence and popular movements"},
+    {"event": "Constitutional Crises", "application": "Constitutional Crisis node - legal framework challenges"},
+    {"event": "Corporate Lobbying", "application": "Opportunist faction - wealth-to-influence conversion mechanics"}
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "endings": [
+    {
+      "id": "ending_dictatorship",
+      "type": "Dictatorship",
+      "title": "The Iron Throne",
+      "description": "Through ruthless consolidation of power, you have established an unbreakable grip on the nation.",
+      "conditions": [
+        {"resource": "PoliticalCapital", "min": 80},
+        {"resource": "Military", "min": 60},
+        {"resource": "Legitimacy", "max": 30},
+        {"decision": "main_06:m6_emergency"},
+        {"decision": "main_07:m7_consolidate"}
+      ]
+    },
+    {
+      "id": "ending_democracy",
+      "type": "DemocraticReform",
+      "title": "The Dawn of Democracy",
+      "description": "Against all odds, you have steered the nation toward democratic reform.",
+      "conditions": [
+        {"resource": "Legitimacy", "min": 70},
+        {"resource": "PublicSupport", "min": 60},
+        {"resource": "Reputation", "min": 60},
+        {"decision": "main_06:m6_reform"},
+        {"decision": "main_07:m7_democratize"}
+      ]
+    },
+    {
+      "id": "ending_balance",
+      "type": "PowerBalance",
+      "title": "The Grand Equilibrium",
+      "description": "You have achieved a stable balance of power between all factions.",
+      "conditions": [
+        {"resource": "Influence", "min": 60},
+        {"decision": "main_06:m6_compromise"},
+        {"decision": "main_07:m7_balance"}
+      ]
+    },
+    {
+      "id": "ending_exile",
+      "type": "ExileFailure",
+      "title": "The Fallen Leader",
+      "description": "Your ambitions exceeded your grasp. Political enemies have united against you.",
+      "conditions": [
+        {"resource": "PoliticalCapital", "max": 15},
+        {"resource": "Reputation", "max": 15}
+      ]
+    },
+    {
+      "id": "ending_shadow",
+      "type": "ShadowControl",
+      "title": "The Puppet Master",
+      "description": "While others hold visible power, you control from the shadows.",
+      "conditions": [
+        {"resource": "Information", "min": 80},
+        {"resource": "Influence", "min": 60},
+        {"decision": "main_07:m7_shadow"}
+      ]
+    },
+    {
+      "id": "ending_collapse",
+      "type": "SystemCollapse",
+      "title": "The House of Cards",
+      "description": "The political system has collapsed under its own contradictions.",
+      "conditions": [
+        {"resource": "Legitimacy", "max": 20},
+        {"resource": "PublicSupport", "max": 20}
+      ]
+    },
+    {
+      "id": "ending_foreign",
+      "type": "ForeignIntervention",
+      "title": "The External Hand",
+      "description": "Foreign powers have decisively intervened in domestic affairs.",
+      "conditions": [
+        {"resource": "Legitimacy", "max": 25},
+        {"resource": "Military", "max": 25},
+        {"decision": "main_05:m5_exploit"}
+      ]
+    },
+    {
+      "id": "ending_ambition",
+      "type": "PersonalAmbition",
+      "title": "The Self-Made Sovereign",
+      "description": "Your personal ambition has been fulfilled beyond your wildest dreams.",
+      "conditions": [
+        {"resource": "Wealth", "min": 80},
+        {"resource": "PoliticalCapital", "min": 60},
+        {"resource": "Influence", "min": 60},
+        {"decision": "main_01:m1_disrupt"}
+      ]
+    }
+  ],
+  "keyEvents": [
+    {"id": "main_01", "name": "The Power Vacuum", "turn": 1, "weight": 10},
+    {"id": "main_02a", "name": "Coalition Building", "turn": 5, "weight": 8},
+    {"id": "main_02b", "name": "Conservative Consolidation", "turn": 5, "weight": 8},
+    {"id": "main_03", "name": "The Intelligence War", "turn": 15, "weight": 12},
+    {"id": "main_04", "name": "The Economic Crisis", "turn": 25, "weight": 15},
+    {"id": "main_05", "name": "The Foreign Interference", "turn": 35, "weight": 12},
+    {"id": "main_06", "name": "The Constitutional Crisis", "turn": 50, "weight": 18},
+    {"id": "main_07", "name": "The Final Gambit", "turn": 70, "weight": 20},
+    {"id": "main_08", "name": "The New Order", "turn": 90, "weight": 15},
+    {"id": "dynamic_crisis_1", "name": "Political Crisis Escalation", "weight": 5},
+    {"id": "dynamic_crisis_2", "name": "Emerging Political Tension", "weight": 5},
+    {"id": "dynamic_opportunity_1", "name": "Unexpected Opportunity", "weight": 4},
+    {"id": "economic_bubble", "name": "Economic Bubble Burst", "weight": 6},
+    {"id": "scandal_exposure", "name": "Major Scandal Exposure", "weight": 7},
+    {"id": "military_incident", "name": "Border Military Incident", "weight": 8}
+  ]
+}

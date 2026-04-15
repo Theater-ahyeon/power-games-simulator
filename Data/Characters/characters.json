@@ -1,0 +1,98 @@
+[
+  {
+    "id": "chen_weiming",
+    "name": "Chen Weiming",
+    "stance": "Conservative",
+    "attributes": {"scheming": 85, "charisma": 70, "intelligence": 75, "wealth": 90, "military": 60, "reputation": 80, "integrity": 40, "ambition": 75},
+    "hiddenMotive": {"personalGoal": "Maintain traditional power structure", "secretRelationship": "Secret deal with military", "betrayalTendency": 30.0, "triggerCondition": "When military support wavers", "hiddenAgenda": "Consolidate party control"},
+    "factionId": "conservatives"
+  },
+  {
+    "id": "liu_meihua",
+    "name": "Liu Meihua",
+    "stance": "Conservative",
+    "attributes": {"scheming": 70, "charisma": 85, "intelligence": 65, "wealth": 75, "military": 30, "reputation": 85, "integrity": 55, "ambition": 60},
+    "hiddenMotive": {"personalGoal": "Preserve family political dynasty", "secretRelationship": "Related to former president", "betrayalTendency": 20.0, "triggerCondition": "When family threatened", "hiddenAgenda": "Ensure succession"},
+    "factionId": "conservatives"
+  },
+  {
+    "id": "wang_zhenbang",
+    "name": "Wang Zhenbang",
+    "stance": "Conservative",
+    "attributes": {"scheming": 80, "charisma": 55, "intelligence": 70, "wealth": 85, "military": 70, "reputation": 65, "integrity": 35, "ambition": 80},
+    "hiddenMotive": {"personalGoal": "Control economic policy", "secretRelationship": "Owns major corporation", "betrayalTendency": 45.0, "triggerCondition": "When profits threatened", "hiddenAgenda": "Monopolize key industries"},
+    "factionId": "conservatives"
+  },
+  {
+    "id": "zhao_xueren",
+    "name": "Zhao Xueren",
+    "stance": "Conservative",
+    "attributes": {"scheming": 65, "charisma": 60, "intelligence": 80, "wealth": 60, "military": 50, "reputation": 75, "integrity": 50, "ambition": 55},
+    "hiddenMotive": {"personalGoal": "Maintain bureaucratic influence", "secretRelationship": "Former classmate of president", "betrayalTendency": 25.0, "triggerCondition": "When reform threatens position", "hiddenAgenda": "Block reform initiatives"},
+    "factionId": "conservatives"
+  },
+  {
+    "id": "zhang_haoran",
+    "name": "Zhang Haoran",
+    "stance": "Liberal",
+    "attributes": {"scheming": 60, "charisma": 80, "intelligence": 85, "wealth": 50, "military": 25, "reputation": 90, "integrity": 80, "ambition": 70},
+    "hiddenMotive": {"personalGoal": "Push democratic reform", "secretRelationship": "Connected to foreign NGOs", "betrayalTendency": 15.0, "triggerCondition": "When reform window opens", "hiddenAgenda": "Constitutional reform"},
+    "factionId": "liberals"
+  },
+  {
+    "id": "sun_liying",
+    "name": "Sun Liying",
+    "stance": "Liberal",
+    "attributes": {"scheming": 55, "charisma": 75, "intelligence": 80, "wealth": 40, "military": 20, "reputation": 85, "integrity": 85, "ambition": 65},
+    "hiddenMotive": {"personalGoal": "Protect civil liberties", "secretRelationship": "Whistleblower network member", "betrayalTendency": 10.0, "triggerCondition": "When rights violated", "hiddenAgenda": "Transparency legislation"},
+    "factionId": "liberals"
+  },
+  {
+    "id": "huang_jianguo",
+    "name": "Huang Jianguo",
+    "stance": "Liberal",
+    "attributes": {"scheming": 70, "charisma": 65, "intelligence": 75, "wealth": 55, "military": 30, "reputation": 70, "integrity": 70, "ambition": 60},
+    "hiddenMotive": {"personalGoal": "Reform judicial system", "secretRelationship": "Has evidence of corruption", "betrayalTendency": 25.0, "triggerCondition": "When evidence is strong enough", "hiddenAgenda": "Judicial independence"},
+    "factionId": "liberals"
+  },
+  {
+    "id": "xu_weilan",
+    "name": "Xu Weilan",
+    "stance": "Liberal",
+    "attributes": {"scheming": 50, "charisma": 70, "intelligence": 90, "wealth": 35, "military": 15, "reputation": 80, "integrity": 90, "ambition": 50},
+    "hiddenMotive": {"personalGoal": "Academic freedom advocate", "secretRelationship": "Published critical research", "betrayalTendency": 5.0, "triggerCondition": "Never - committed to truth", "hiddenAgenda": "Educational reform"},
+    "factionId": "liberals"
+  },
+  {
+    "id": "zhou_tianping",
+    "name": "Zhou Tianping",
+    "stance": "Neutral",
+    "attributes": {"scheming": 75, "charisma": 60, "intelligence": 85, "wealth": 70, "military": 45, "reputation": 70, "integrity": 65, "ambition": 45},
+    "hiddenMotive": {"personalGoal": "Maintain balance of power", "secretRelationship": "Mediator between factions", "betrayalTendency": 20.0, "triggerCondition": "When one faction dominates", "hiddenAgenda": "Broker peace"},
+    "factionId": "neutrals"
+  },
+  {
+    "id": "lin_zhaoyi",
+    "name": "Lin Zhaoyi",
+    "stance": "Radical",
+    "attributes": {"scheming": 80, "charisma": 75, "intelligence": 70, "wealth": 40, "military": 45, "reputation": 55, "integrity": 30, "ambition": 90},
+    "hiddenMotive": {"personalGoal": "Overthrow existing order", "secretRelationship": "Underground movement leader", "betrayalTendency": 60.0, "triggerCondition": "When power vacuum emerges", "hiddenAgenda": "Revolutionary takeover"},
+    "factionId": "radicals"
+  },
+  {
+    "id": "he_shengli",
+    "name": "He Shengli",
+    "stance": "Opportunist",
+    "attributes": {"scheming": 90, "charisma": 70, "intelligence": 75, "wealth": 75, "military": 50, "reputation": 45, "integrity": 20, "ambition": 85},
+    "hiddenMotive": {"personalGoal": "Personal power maximization", "secretRelationship": "Multiple faction memberships", "betrayalTendency": 65.0, "triggerCondition": "When power balance shifts", "hiddenAgenda": "Become kingmaker"},
+    "factionId": "opportunists"
+  },
+  {
+    "id": "deng_xiaowei",
+    "name": "Deng Xiaowei",
+    "stance": "Opportunist",
+    "attributes": {"scheming": 80, "charisma": 85, "intelligence": 70, "wealth": 65, "military": 30, "reputation": 65, "integrity": 30, "ambition": 80},
+    "hiddenMotive": {"personalGoal": "Media empire control", "secretRelationship": "Owns major news network", "betrayalTendency": 55.0, "triggerCondition": "When narrative control is possible", "hiddenAgenda": "Information dominance"},
+    "factionId": "opportunists"
+  }
+]

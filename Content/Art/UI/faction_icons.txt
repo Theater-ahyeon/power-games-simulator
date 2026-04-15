@@ -1,0 +1,34 @@
+CONSERVATIVE  [CON]  🏛   Traditional power holders, strong military connections
+    ╔═══════════════════╗
+    ║  ████  ████  ████ ║   Attributes: High Wealth, High Military
+    ║  ████  ████  ████ ║   Low Flexibility, High Stability
+    ║  ████  ████  ████ ║   Motto: "Order through tradition"
+    ╚═══════════════════╝
+
+LIBERAL       [LIB]  📜   Reform advocates, strong public support
+    ╔═══════════════════╗
+    ║  ░░░░  ░░░░  ░░░░ ║   Attributes: High Reputation, High Integrity
+    ║  ░░░░  ░░░░  ░░░░ ║   Low Military, High Public Support
+    ║  ░░░░  ░░░░  ░░░░ ║   Motto: "Progress through reform"
+    ╚═══════════════════╝
+
+NEUTRAL       [NEU]  ⚖   Pragmatic mediators, balanced resources
+    ╔═══════════════════╗
+    ║  ▓▓▓▓  ▓▓▓▓  ▓▓▓▓ ║   Attributes: Balanced across the board
+    ║  ▓▓▓▓  ▓▓▓▓  ▓▓▓▓ ║   Moderate in all areas
+    ║  ▓▓▓▓  ▓▓▓▓  ▓▓▓▓ ║   Motto: "Balance through pragmatism"
+    ╚═══════════════════╝
+
+RADICAL       [RAD]  🔥   Revolutionary elements, high ambition
+    ╔═══════════════════╗
+    ║  ▒▒▒▒  ▒▒▒▒  ▒▒▒▒ ║   Attributes: High Ambition, High Scheming
+    ║  ▒▒▒▒  ▒▒▒▒  ▒▒▒▒ ║   Low Integrity, Unpredictable
+    ║  ▒▒▒▒  ▒▒▒▒  ▒▒▒▒ ║   Motto: "Change through action"
+    ╚═══════════════════╝
+
+OPPORTUNIST   [OPP]  🎭   Self-interested operators, strong intelligence
+    ╔═══════════════════╗
+    ║  ╬╬╬╬  ╬╬╬╬  ╬╬╬╬ ║   Attributes: High Scheming, High Intelligence
+    ║  ╬╬╬╬  ╬╬╬╬  ╬╬╬╬ ║   Very Low Integrity, Unreliable allies
+    ║  ╬╬╬╬  ╬╬╬╬  ╬╬╬╬ ║   Motto: "Power through opportunity"
+    ╚═══════════════════╝
