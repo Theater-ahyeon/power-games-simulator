@@ -35,6 +35,20 @@ file(GLOB_RECURSE POWERGAME_SOURCES
     "Source/PowerGame/Audio/*.cpp"
 )
 
+# Add explicit source files for GUI TutorialSystem
+set(GUI_TUTORIAL_SOURCES
+    "Source/PowerGame/GUI/TutorialSystem.h"
+    "Source/PowerGame/GUI/TutorialSystem.cpp"
+)
+
+# Add explicit source files for Game systems
+set(GAME_SYSTEM_SOURCES
+    "Source/PowerGame/Game/AchievementSystem.h"
+    "Source/PowerGame/Game/AchievementSystem.cpp"
+    "Source/PowerGame/Game/GameStateManager.h"
+    "Source/PowerGame/Game/GameStateManager.cpp"
+)
+
 add_executable(PowerGame ${POWERGAME_SOURCES})
 
 target_include_directories(PowerGame PRIVATE
