@@ -31,6 +31,8 @@ file(GLOB_RECURSE POWERGAME_SOURCES
     "Source/PowerGame/Data/*.cpp"
     "Source/PowerGame/AI/*.cpp"
     "Source/PowerGame/Game/*.cpp"
+    "Source/PowerGame/GUI/*.cpp"
+    "Source/PowerGame/Audio/*.cpp"
 )
 
 add_executable(PowerGame ${POWERGAME_SOURCES})
@@ -40,8 +42,17 @@ target_include_directories(PowerGame PRIVATE
     ${CMAKE_SOURCE_DIR}/ThirdParty
 )
 
+find_package(SDL2 REQUIRED)
+find_package(SDL2_image REQUIRED)
+find_package(SDL2_ttf REQUIRED)
+find_package(SDL2_mixer REQUIRED)
+
 target_link_libraries(PowerGame PRIVATE
     nlohmann_json::nlohmann_json
+    SDL2::SDL2
+    SDL2::SDL2_image
+    SDL2::SDL2_ttf
+    SDL2::SDL2_mixer
 )
 
 if(MSVC)

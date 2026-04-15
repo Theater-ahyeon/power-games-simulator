@@ -216,6 +216,57 @@ chmod +x build.sh
 
 项目使用CMake的FetchContent功能自动下载nlohmann_json库，无需手动安装第三方依赖。
 
+### SDL2 GUI支持（可选）
+
+如需构建带有图形界面的版本，需要安装SDL2库：
+
+#### Windows
+
+下载并安装SDL2开发库：
+
+```bash
+# 使用vcpkg
+vcpkg install sdl2:x64-windows sdl2-image:x64-windows sdl2-ttf:x64-windows sdl2-mixer:x64-windows
+
+# 或手动下载
+# https://github.com/libsdl-org/SDL/releases
+# https://github.com/libsdl-org/SDL_image/releases
+# https://github.com/libsdl-org/SDL_ttf/releases
+# https://github.com/libsdl-org/SDL_mixer/releases
+```
+
+#### Linux (Ubuntu/Debian)
+
+```bash
+sudo apt-get install libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev libsdl2-mixer-dev
+```
+
+#### macOS
+
+```bash
+brew install sdl2 sdl2_image sdl2_ttf sdl2_mixer
+```
+
+#### 构建GUI版本
+
+```bash
+cmake -B build -G "Visual Studio 17 2022" -DUSE_GUI=ON -DSDL2_SUPPORT=ON
+cmake --build build --config Release
+```
+
+默认构建为控制台版本，如需GUI版本，请定义预处理宏 `USE_GUI` 和 `SDL2_SUPPORT`。
+
+### MiniMax API集成（可选）
+
+如需使用AI生成美术资源，需配置MiniMax API密钥：
+
+```bash
+export MINIMAX_API_KEY="your-api-key-here"
+python Tools/AssetGenerator/minimax_asset_generator.py
+```
+
+API密钥申请地址：https://platform.minimax.chat/
+
 ## 使用方法
 
 ### 运行游戏
