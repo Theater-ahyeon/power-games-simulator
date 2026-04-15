@@ -1,0 +1,229 @@
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                                      ║
+║                    ███████╗██╗██╗  ██╗████████╗███████╗██╗      █████╗ ███╗   ██╗██████╗          ║
+║                    ██╔════╝██║╚██╗██╔╝╚══██╔══╝██╔════╝██║     ██╔══██╗████╗  ██║██╔══██╗         ║
+║                    █████╗  ██║ ╚███╔╝    ██║   █████╗  ██║     ███████║██╔██╗ ██║██║  ██║         ║
+║                    ██╔══╝  ██║ ██╔██╗    ██║   ██╔══╝  ██║     ██╔══██║██║╚██╗██║██║  ██║         ║
+║                    ██║     ██║██╔╝ ██╗   ██║   ███████╗███████╗██║  ██║██║ ╚████║██████╔╝         ║
+║                    ╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝          ║
+║                                                                                                      ║
+║              ██████╗ ███████╗████████╗██╗         ██████╗ ███████╗██████╗ ███╗   ███╗███████╗    ║
+║              ██╔══██╗██╔════╝╚══██╔══╝██║         ██╔══██╗██╔════╝██╔══██╗████╗ ████║██╔════╝    ║
+║              ██████╔╝█████╗     ██║   ██║         ██████╔╝█████╗  ██████╔╝██╔████╔██║█████╗      ║
+║              ██╔══██╗██╔══╝     ██║   ██║         ██╔══██╗██╔══╝  ██╔══██╗██║╚██╔╝██║██╔══╝      ║
+║              ██║  ██║███████╗   ██║   ███████╗    ██║  ██║███████╗██║  ██║██║ ╚═╝ ██║███████╗    ║
+║              ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚══════╝    ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝    ║
+║                                                                                                      ║
+║                      ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ [ALLIANCE STATUS OVERVIEW]                                                                          │
+│                                                                                                     │
+│  YOUR DIPLOMATIC RATING: ████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  68%       │
+│  ACTIVE TREATIES: 4 / 8    REPUTATION COST OF BETRAYAL: ████████████████░░░░░░░░  78%          │
+│                                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ [ACTIVE TREATIES]                                                                                   │
+│                                                                                                     │
+│  ╔═════════════════════════════════════════════════════════════════════════════════════════════╗ │
+│  ║ TREATY 001: ECONOMIC COOPERATION WITH CONSERVATIVE ALLIANCE                                   ║ │
+│  ╠═════════════════════════════════════════════════════════════════════════════════════════════╣ │
+│  ║ TYPE: ECONOMIC ALLIANCE    |    STATUS: ████████████████ [ACTIVE]    |    TIER: II           ║ │
+│  ║ DURATION: 5 / 12 TURNS    |    RENEWAL COST: 15 INFLUENCE                                    ║ │
+│  ║                                                                                             ║ │
+│  ║ MUTUAL BENEFITS:                                                                            ║ │
+│  ║   ▸ +5 WEALTH per turn from trade                                                            ║ │
+│  ║   ▸ +3 INFLUENCE per turn from economic cooperation                                         ║ │
+│  ║   ▸ Access to Conservative financial networks                                               ║ │
+│  ║                                                                                             ║ │
+│  ║ OBLIGATIONS:                                                                                 ║ │
+│  ║   ▸ -2 LEGITIMACY per turn (corporate ties)                                                 ║ │
+│  ║   ▸ Required: Support Conservative economic policies                                         ║ │
+│  ║                                                                                             ║ │
+│  ║ TRUST LEVEL: ████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  72%              ║ │
+│  ║ BREAKTHROUGH RISK: ████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  15%             ║ │
+│  ╚═════════════════════════════════════════════════════════════════════════════════════════════╝ │
+│                                                                                                     │
+│  ╔═════════════════════════════════════════════════════════════════════════════════════════════╗ │
+│  ║ TREATY 002: INTELLIGENCE SHARING WITH CENTRAL BLOC                                           ║ │
+│  ╠═════════════════════════════════════════════════════════════════════════════════════════════╣ │
+│  ║ TYPE: INTELLIGENCE SHARING    |    STATUS: ████████████████ [ACTIVE]    |    TIER: III        ║ │
+│  ║ DURATION: 8 / 10 TURNS    |    RENEWAL COST: 20 INFORMATION                                  ║ │
+│  ║                                                                                             ║ │
+│  ║ MUTUAL BENEFITS:                                                                            ║ │
+│  ║   ▸ +8 INFORMATION per turn from shared intel                                               ║ │
+│  ║   ▸ +5% DETECTION RATE bonus for counter-intelligence                                       ║ │
+│  ║   ▸ Early warning on faction movements                                                      ║ │
+│  ║                                                                                             ║ │
+│  ║ OBLIGATIONS:                                                                                ║ │
+│  ║   ▸ -10% INTELLIGENCE NETWORK privacy (shared database)                                     ║ │
+│  ║   ▸ Required: Share significant intelligence discoveries                                     ║ │
+│  ║                                                                                             ║ │
+│  ║ TRUST LEVEL: ██████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  85%             ║ │
+│  ║ BREAKTHROUGH RISK: ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  8%              ║ │
+│  ╚═════════════════════════════════════════════════════════════════════════════════════════════╝ │
+│                                                                                                     │
+│  ╔═════════════════════════════════════════════════════════════════════════════════════════════╗ │
+│  ║ TREATY 003: NON-AGGRESSION PACT WITH LIBERAL COALITION                                       ║ │
+│  ╠═════════════════════════════════════════════════════════════════════════════════════════════╣ │
+│  ║ TYPE: NON-AGGRESSION    |    STATUS: ████████████████ [ACTIVE]    |    TIER: I              ║ │
+│  ║ DURATION: 2 / 6 TURNS    |    RENEWAL COST: 10 REPUTATION                                   ║ │
+│  ║                                                                                             ║ │
+│  ║ MUTUAL BENEFITS:                                                                            ║ │
+│  ║   ▸ Cannot be target of hostile actions from Liberal Coalition                              ║ │
+│  ║   ▸ +5% PUBLIC SUPPORT from political stability perception                                 ║ │
+│  ║                                                                                             ║ │
+│  ║ OBLIGATIONS:                                                                                ║ │
+│  ║   ▸ Cannot initiate hostile actions against Liberal Coalition                               ║ │
+│  ║   ▸ Required: Maintain minimum diplomatic relations                                        ║ │
+│  ║                                                                                             ║ │
+│  ║ TRUST LEVEL: ██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  48%             ║ │
+│  ║ BREAKTHROUGH RISK: ████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  38%             ║ │
+│  ║ ⚠ WARNING: LOW TRUST - RENEGOTIATION RECOMMENDED                                           ║ │
+│  ╚═════════════════════════════════════════════════════════════════════════════════════════════╝ │
+│                                                                                                     │
+│  ╔═════════════════════════════════════════════════════════════════════════════════════════════╗ │
+│  ║ TREATY 004: MILITARY COOPERATION WITH OPPORTUNIST CIRCLE                                     ║ │
+│  ╠═════════════════════════════════════════════════════════════════════════════════════════════╣ │
+│  ║ TYPE: MILITARY COOPERATION    |    STATUS: ████████░░░░ [UNSTABLE]    |    TIER: II         ║ │
+│  ║ DURATION: 1 / 8 TURNS    |    RENEWAL COST: 25 MILITARY                                       ║ │
+│  ║                                                                                             ║ │
+│  ║ MUTUAL BENEFITS:                                                                            ║ │
+│  ║   ▸ +10 MILITARY from shared defense resources                                              ║ │
+│  ║   ▸ Access to Opportunist intelligence assets                                               ║ │
+│  ║                                                                                             ║ │
+│  ║ OBLIGATIONS:                                                                                ║ │
+│  ║   ▸ -5 LEGITIMACY per turn (questionable allies)                                            ║ │
+│  ▸ Cannot investigate Opportunist activities                                                   ║ │
+│  ║                                                                                             ║ │
+│  ║ TRUST LEVEL: ████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  32%              ║ │
+│  ║ BREAKTHROUGH RISK: ████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  55%             ║ │
+│  ║ ⚠ CRITICAL: HIGH BREAKTHROUGH RISK - OPPORTUNIST MOTIVES QUESTIONABLE                      ║ │
+│  ╚═════════════════════════════════════════════════════════════════════════════════════════════╝ │
+│                                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ [DIPLOMATIC RELATIONS MAP]                                                                          │
+│                                                                                                     │
+│                     ┌─────────────────────────────────────────────────────┐                        │
+│                     │                                                     │                        │
+│                     │     YOUR FACTION                                    │                        │
+│                     │     ████████████████                               │                        │
+│                     │     TRUST: ████████░░ 75%                          │                        │
+│                     │                                                     │                        │
+│                     └──────────────┬──────────────────────────────────────┘                        │
+│                                    │                                                               │
+│         ┌──────────────────────────┼──────────────────────────┐                                  │
+│         │                          │                          │                                  │
+│         ▼                          ▼                          ▼                                  │
+│  ┌─────────────┐          ┌─────────────┐          ┌─────────────┐                                  │
+│  │ CONSERVATIVE│          │   LIBERAL   │          │   CENTRAL   │                                  │
+│  │ ALLIANCE    │          │  COALITION  │          │    BLOC     │                                  │
+│  │ ████████░░░ │          │ █████░░░░░░ │          │ ██████████░░ │                                  │
+│  │ TRUST: 72%  │◄────────►│ TRUST: 48%  │◄────────►│ TRUST: 85%  │                                  │
+│  │ [ALLIED]   │  ECONOMIC │ [UNSTABLE] │  INTEL  │ [STRONG]   │                                  │
+│  └─────────────┘          └─────────────┘          └─────────────┘                                  │
+│         │                          │                          │                                  │
+│         │      ┌────────────────────┴────────────────────┐   │                                  │
+│         │      │                                         │   │                                  │
+│         │      │          ┌─────────────┐                 │   │                                  │
+│         │      │          │   RADICAL   │                 │   │                                  │
+│         │      │          │   FRONT     │                 │   │                                  │
+│         │      │          │ ███░░░░░░░░ │                 │   │                                  │
+│         │      │          │ TRUST: 15%  │                 │   │                                  │
+│         │      │          │ [HOSTILE]  │                 │   │                                  │
+│         │      │          └─────────────┘                 │   │                                  │
+│         │      │                   │                     │   │                                  │
+│         │      │                   └─────────────────────┼───┘                                  │
+│         │      │                                       │                                          │
+│         │      │          ┌─────────────┐               │                                          │
+│         │      └─────────►│ OPPORTUNIST │◄──────────────┘                                          │
+│         │                 │  CIRCLE     │                                                       │
+│         └────────────────►│ ████░░░░░░░ │                                                       │
+│                           │ TRUST: 32%  │                                                       │
+│                           │ [UNSTABLE] │                                                       │
+│                           └─────────────┘                                                       │
+│                                  │                                                                │
+│                                  ▼                                                                │
+│                           ┌─────────────┐                                                        │
+│                           │   FOREIGN   │                                                        │
+│                           │   POWERS    │                                                        │
+│                           │ ██░░░░░░░░░ │                                                        │
+│                           │ ACCESS: 25% │                                                        │
+│                           │ [CAUTIOUS] │                                                        │
+│                           └─────────────┘                                                        │
+│                                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ [NEW TREATY NEGOTIATION]                                                                            │
+│                                                                                                     │
+│  TARGET FACTION:    [████████████████████████████]  SELECT: CONSERVATIVE ALLIANCE               │
+│                                                                                                     │
+│  AVAILABLE TREATY TYPES:                                                                            │
+│                                                                                                     │
+│    [1] MILITARY PACT                    [5] TECHNOLOGICAL COOPERATION                             │
+│        Mutual defense agreement             Joint research and development                       │
+│        Cost: 20 MILITARY                     Cost: 15 INFORMATION                                 │
+│                                                                                                     │
+│    [2] ECONOMIC ALLIANCE                 [6] TRADE AGREEMENT                                       │
+│        Deep economic integration               Limited trade preferences                          │
+│        Cost: 15 WEALTH                        Cost: 10 WEALTH                                     │
+│                                                                                                     │
+│    [3] POLITICAL COALITION               [7] CULTURAL EXCHANGE                                     │
+│        Coordinated political action            People-to-people contacts                          │
+│        Cost: 25 INFLUENCE                     Cost: 5 REPUTATION                                  │
+│                                                                                                     │
+│    [4] INTELLIGENCE SHARING              [8] COMPREHENSIVE PARTNERSHIP                              │
+│        Shared intelligence network              All-encompassing cooperation                       │
+│        Cost: 20 INFORMATION                     Cost: 40 ALL RESOURCES (TIER IV)                  │
+│                                                                                                     │
+│  SELECT TREATY TYPE: [__]                                                                           │
+│                                                                                                     │
+│  PROPOSED TERMS:                                                                                   │
+│    YOUR OFFER:        [____________________]                                                       │
+│    EXPECTED RETURN:  [____________________]                                                       │
+│                                                                                                     │
+│  NEGOTIATION SUCCESS PROBABILITY: ██████████░░ [85%]                                              │
+│  TRUST REQUIREMENT: 60% | CURRENT: 72% ✓                                                            │
+│                                                                                                     │
+│  [►] OPEN NEGOTIATIONS    [C] CANCEL    [?] TREATY COMPARISON                                    │
+│                                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ [BETRAYAL CONSEQUENCE ANALYSIS]                                                                      │
+│                                                                                                     │
+│  ⚠ SELECTED ACTION: DENOUNCE TREATY WITH LIBERAL COALITION                                       │
+│                                                                                                     │
+│  IMMEDIATE CONSEQUENCES:                                                                            │
+│    ▸ REPUTATION: -25 (BREAKING DIPLOMATIC PACT)                                                   │
+│    ▸ LIBERAL COALITION: RELATIONS DROPS TO 10% (HOSTILE)                                         │
+│    ▸ PUBLIC SUPPORT: -15 (APPEARS UNRELIABLE)                                                    │
+│                                                                                                     │
+│  CASCADE EFFECTS:                                                                                  │
+│    ▸ CENTRAL BLOC: -20 TRUST (WITNESS TO BETRAYAL)                                               │
+│    ▸ CONSERVATIVE ALLIANCE: +10 TRUST (BENEFITS FROM YOUR WEAKNESS)                              │
+│    ▸ RADICAL FRONT: +30 ACTIVITY (PERCEIVES INSTABILITY)                                         │
+│    ▸ FOREIGN POWERS: -15 ACCESS (UNPREDICTABLE ACTOR)                                           │
+│                                                                                                     │
+│  LONG-TERM IMPACT:                                                                                 │
+│    ▸ ALL FUTURE NEGOTIATIONS: -25% SUCCESS RATE                                                  │
+│    ▸ PUBLIC SUPPORT DECAY: +2% PER TURN (TRUST ISSUES)                                           │
+│    ▸ UNLOCK: LIBERAL COALITION COUNTER-INTELLIGENCE AGAINST YOU                                 │
+│                                                                                                     │
+│  HISTORICAL PARALLEL: WATERGATE ERA TRUST COLLAPSE                                               │
+│                                                                                                     │
+│  [►] CONFIRM BETRAYAL    [ESC] CANCEL    [R] REVIEW FULL CONSEQUENCES                            │
+│                                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                                      ║
+║  [T] NEW TREATY    [R] RENEGOTIATE    [B] BETRAYAL OPTIONS    [H] HISTORY    [ESC] RETURN TO MAIN ║
+║                                                                                                      ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════╝

@@ -1,0 +1,210 @@
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                                      ║
+║                    ████████╗██╗  ██╗██╗    ██╗███████╗████████╗                                      ║
+║                    ╚══██╔══╝██║  ██║██║    ██║██╔════╝╚══██╔══╝                                      ║
+║                       ██║   ███████║██║ █╗ ██║███████╗   ██║                                         ║
+║                       ██║   ██╔══██║██║███╗██║╚════██║   ██║                                         ║
+║                       ██║   ██║  ██║╚███╔███╔╝███████║   ██║                                         ║
+║                       ╚═╝   ╚═╝  ╚═╝ ╚══╝╚══╝ ╚══════╝   ╚═╝                                         ║
+║                                                                                                      ║
+║         ████████╗██╗  ██╗███████╗    ███████╗ ██████╗████████╗██╗   ██╗██████╗ ███████╗              ║
+║         ╚══██╔══╝██║  ██║██╔════╝    ██╔════╝██╔════╝╚══██╔══╝██║   ██║██╔══██╗██╔════╝              ║
+║            ██║   ███████║█████╗      █████╗  ██║        ██║   ██║   ██║██████╔╝█████╗                ║
+║            ██║   ██╔══██║██╔══╝      ██╔══╝  ██║        ██║   ██║   ██║██╔══██╗██╔══╝                ║
+║            ██║   ██║  ██║███████╗    ██║     ╚██████╗   ██║   ╚██████╔╝██║  ██║███████╗              ║
+║            ╚═╝   ╚═╝  ╚═╝╚══════╝    ╚═╝      ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝              ║
+║                                                                                                      ║
+║                      ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ [PERSONNEL DOSSIER]                                                                                 │
+│                                                                                                     │
+│  SUBJECT: CHEN WEIMING                                                                              │
+│  CODENAME: GATEKEEPER                                                                               │
+│  CLASSIFICATION: ██████████ [STRATEGIC ASSET]                                                      │
+│                                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────┐  ┌──────────────────────────────────────────────────┐
+│ [IDENTIFICATION]                             │  │ [PHYSICAL PROFILE]                              │
+│                                              │  │                                                  │
+│  FULL NAME: Chen Weiming                     │  │  ╔═══════════════════════════════╗             │
+│  TITLE: Leader of Conservative Alliance      │  │  ║                               ║             │
+│  AGE: 62                                     │  │  ║   ▄▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▄   ║             │
+│  POLITICAL STANCE: ████████████ [CONSERVATIVE]│  │  ║  █ ●             ● █      ║             │
+│  AFFILIATION: Conservative Alliance          │  │  ║   ▀▄▀▀▀▀▄▀▀▀▀▄▀▀▀▀▄▀   ║             │
+│  TENURE: 15 YEARS                            │  │  ║      ▀▀▀▀▀▀▀▀▀▀▀      ║             │
+│                                              │  │  ║         ▀▀▀▀▀▀         ║             │
+│  BASE OF OPERATIONS:                         │  │  ║                               ║             │
+│  National Assembly Building, District 7       │  │  ╚═══════════════════════════════╝             │
+│                                              │  │                                                  │
+└──────────────────────────────────────────────┘  └──────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ [ATTRIBUTE ASSESSMENT]                                                                               │
+│                                                                                                     │
+│  CORE COMPETENCIES:                                                                                 │
+│                                                                                                     │
+│  █████████████████████████████████████████████████████████████░░░░░░░░░░░░░░░░░░░░  95% SCHEMING    │
+│  █████████████████████████████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░  88% CHARISMA   │
+│  ██████████████████████████████████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░  92% WEALTH     │
+│  ████████████████████████████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░  85% MILITARY   │
+│                                                                                                     │
+│  WEAKNESSES:                                                                                        │
+│                                                                                                     │
+│  ██████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  45% INTEGRITY   │
+│  █████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  30% FLEXIBILITY │
+│                                                                                                     │
+│  PSYCHOLOGICAL PROFILE:                                                                             │
+│  ▸ HIGH CALIBER STRATEGIST with extensive network of political contacts                          │
+│  ▸ MANIPULATIVE TENDENCIES - uses others as pawns in larger game                                 │
+│  ▸ LEGACY-FOCUSED - deeply concerned with historical reputation                                  │
+│  ▸ RISK-AVERSE in personal matters but bold in political maneuvering                              │
+│                                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ [RELATIONSHIP MATRIX]                                                                               │
+│                                                                                                     │
+│  RELATIONSHIP WITH YOU:                                                                             │
+│  ██████████████████████████████████████████████████████████████████████████████░░░░  95%          │
+│  LOYALTY: ████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  92%              │
+│  TRUST:   ██████████████████████████████████████████████████████░░░░░░░░░░░  88%                │
+│  FEAR:    ████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  45%                │
+│                                                                                                     │
+│  KEY RELATIONSHIPS:                                                                                 │
+│                                                                                                     │
+│  ▸ SARAH JENKINS (LIBERAL COALITION)                                                              │
+│    RELATIONSHIP: ████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  25% (HOSTILE)    │
+│    HISTORY: Long-standing political rivals, respect each other's competence                      │
+│                                                                                                     │
+│  ▸ MINISTER ZHANG (CENTRAL BLOC)                                                                 │
+│    RELATIONSHIP: ██████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  72% (CAUTIOUS)   │
+│    HISTORY: Former colleagues, now maintain professional distance                                │
+│                                                                                                     │
+│  ▸ COLONEL SUN WEI (MILITARY)                                                                     │
+│    RELATIONSHIP: ██████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░  90% (ALLIED)    │
+│    HISTORY: Close ally, shares conservative values and military background                      │
+│                                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ [HIDDEN AGENDA]                                                                                     │
+│                                                                                                     │
+│  PUBLIC STATED GOALS:                                                                               │
+│  ▸ Maintain national stability and traditional values                                           │
+│  ▸ Strengthen economic prosperity through market conservatism                                    │
+│  ▸ Protect national sovereignty and cultural heritage                                            │
+│                                                                                                     │
+│  UNKNOWN AGENDA (85% CONCEALED):                                                                   │
+│  ▸ SECRET: Seeks to establish family dynasty in political sphere                                 │
+│  ▸ SECRET: Has underground financial network independent of official channels                    │
+│  ▸ HIDDEN: Plans to eliminate liberal opposition within 3 political cycles                      │
+│  ▸ PRIVATE: Grandson has gambling debts to criminal organization                                  │
+│                                                                                                     │
+│  EMOTIONAL LEVERAGE POINTS:                                                                         │
+│  ▸ Pride: Deep need for historical recognition and legacy                                         │
+│  ▸ Fear: Terrified of being remembered as a failure                                              │
+│  ▸ Greed: Accumulated wealth beyond official declaration                                         │
+│  ▸ Vanity: Obsessed with portrait in National Gallery                                             │
+│                                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ [CAPABILITY ASSESSMENT]                                                                              │
+│                                                                                                     │
+│  POLITICAL INFLUENCE:                                                                               │
+│  ████████████████████████████████████████████████████████████████████████████████░░  98%           │
+│  Network of loyal supporters spans all government branches                                      │
+│                                                                                                     │
+│  ECONOMIC CONTROL:                                                                                  │
+│  ██████████████████████████████████████████████████████████████░░░░░░░░░░░░  85%                │
+│  Controls major industrial conglomerates through shell companies                                 │
+│                                                                                                     │
+│  INTELLIGENCE ASSETS:                                                                               │
+│  ████████████████████████████████████████████████████░░░░░░░░░░░░░░░░░░░░░░  75%                │
+│  Maintains informant network in all major factions                                               │
+│                                                                                                     │
+│  MILITARY SUPPORT:                                                                                  │
+│  ████████████████████████████████████████████████████████░░░░░░░░░░░░░░░░░  88%                 │
+│  Strong ties to military leadership, especially retired officers                                 │
+│                                                                                                     │
+│  MEDIA CONTROL:                                                                                     │
+│  ██████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  65%                 │
+│  Owns 3 major news outlets, indirect control of 2 more                                         │
+│                                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ [THREAT/ASSET EVALUATION]                                                                           │
+│                                                                                                     │
+│  THREAT LEVEL: ██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  SIGNIFICANT      │
+│                                                                                                     │
+│  IF ALLIED:                                                                                        │
+│  ▸ +25% political maneuver success rate                                                          │
+│  ▸ Access to Conservative financial networks                                                     │
+│  ▸ Military coordination support                                                                  │
+│  ▸ Intelligence sharing on liberal activities                                                    │
+│                                                                                                     │
+│  IF HOSTILE:                                                                                       │
+│  ▸ Major obstacle to any reform initiatives                                                      │
+│  ▸ Can mobilize 40% of National Assembly against you                                            │
+│  ▸ Financial pressure through market manipulation                                               │
+│  ▸ Intelligence operations to undermine your reputation                                          │
+│                                                                                                     │
+│  RECOMMENDED APPROACH:                                                                             │
+│  ▸ MAINTAIN ALLIANCE - His support is critical for current stability                            │
+│  ▸ MONITOR ACTIVITIES - His hidden agenda may conflict with your interests                      │
+│  ▸ CULTIVATE TRUST - He values loyalty above all else                                           │
+│  ▸ IDENTIFY LEVERAGE - His grandson's debts could be useful                                      │
+│                                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ [INTERACTION HISTORY]                                                                                │
+│                                                                                                     │
+│  RECENT ENGAGEMENTS:                                                                                 │
+│                                                                                                     │
+│  T-2: Requested emergency session on economic policy                                            │
+│       YOUR RESPONSE: Granted meeting, led to +5 TRUST                                            │
+│                                                                                                     │
+│  T-5: Provided intelligence on Liberal coalition strategy                                        │
+│       VALUE RECEIVED: Critical intel on opposition plans                                         │
+│                                                                                                     │
+│  T-8: Opposed your reform proposal publicly                                                      │
+│       RESOLUTION: Private negotiation restored cooperation                                        │
+│                                                                                                     │
+│  T-12: Offered military liaison services                                                         │
+│       STATUS: Active cooperation established                                                     │
+│                                                                                                     │
+│  PATTERN ANALYSIS:                                                                                 │
+│  ▸ Chen values pragmatic cooperation over ideological purity                                    │
+│  ▸ Will compromise when personal interests align                                                 │
+│  ▸ Expects loyalty in return for support                                                         │
+│  ▸ Slow to forgive perceived betrayals                                                           │
+│                                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ [FACTION OVERVIEW - CONSERVATIVE ALLIANCE]                                                         │
+│                                                                                                     │
+│  FACTION STRENGTH: ████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  78%           │
+│  INTERNAL COHESION: ██████████████████████████████████████████████████░░░░░░░  88%            │
+│  FINANCIAL RESOURCES: ████████████████████████████████████████████████████░░  92%             │
+│  MILITARY CONNECTIONS: ██████████████████████████████████████████████░░░░░░░░  80%             │
+│                                                                                                     │
+│  FACTION LEADER: Chen Weiming                                                                       │
+│  SECONDARY LEADERS: Colonel Sun Wei, Mayor Liu Sheng                                             │
+│  IDEOLOGY: Traditional values, market conservatism, strong national defense                     │
+│  CORE CONSTITUENCY: Business elite, military veterans, cultural traditionalists                  │
+│                                                                                                     │
+│  POSITION TOWARD YOU: ██████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░  [ALLIED]         │
+│                                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                                      ║
+║  [◄] PREVIOUS CHARACTER    [►] NEXT CHARACTER    [F] FACTION VIEW    [ESC] RETURN TO MAIN       ║
+║                                                                                                      ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════╝

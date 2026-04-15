@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Intelligence Command | Spy Deployment</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@400;500;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#1e2023",
+                        "error": "#ffb4ab",
+                        "primary-fixed-dim": "#00daf3",
+                        "inverse-surface": "#e2e2e6",
+                        "on-tertiary": "#690007",
+                        "surface-variant": "#333538",
+                        "tertiary-fixed-dim": "#ffb4ac",
+                        "on-background": "#e2e2e6",
+                        "inverse-on-surface": "#2f3034",
+                        "tertiary-fixed": "#ffdad6",
+                        "secondary": "#e9c349",
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-primary": "#00363d",
+                        "inverse-primary": "#006875",
+                        "on-secondary": "#3c2f00",
+                        "on-secondary-container": "#342800",
+                        "surface-tint": "#00daf3",
+                        "primary-container": "#001b1f",
+                        "on-primary-container": "#008e9f",
+                        "surface-container-highest": "#333538",
+                        "background": "#111316",
+                        "on-primary-fixed-variant": "#004f58",
+                        "on-error": "#690005",
+                        "tertiary": "#ffb4ac",
+                        "surface": "#111316",
+                        "on-tertiary-container": "#e64842",
+                        "on-primary-fixed": "#001f24",
+                        "primary": "#00daf3",
+                        "surface-bright": "#37393d",
+                        "tertiary-container": "#390002",
+                        "surface-container-high": "#282a2d",
+                        "surface-container-lowest": "#0c0e11",
+                        "on-error-container": "#ffdad6",
+                        "secondary-container": "#af8d11",
+                        "on-surface": "#e2e2e6",
+                        "on-secondary-fixed": "#241a00",
+                        "error-container": "#93000a",
+                        "on-surface-variant": "#c6c6cd",
+                        "surface-container-low": "#1a1c1f",
+                        "primary-fixed": "#9cf0ff",
+                        "on-tertiary-fixed": "#410003",
+                        "outline": "#909097",
+                        "secondary-fixed": "#ffe088",
+                        "on-secondary-fixed-variant": "#574500",
+                        "surface-dim": "#111316",
+                        "on-tertiary-fixed-variant": "#92030f",
+                        "outline-variant": "#45464d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(40, 42, 45, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        .asymmetric-grid {
+            grid-template-columns: 320px 1fr 380px;
+        }
+        @media (max-width: 1280px) {
+            .asymmetric-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .map-grid {
+            background-image: radial-gradient(circle, #45464d 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body select-none">
+<!-- Top Navigation Shell -->
+<header class="bg-[#111316] fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 border-none">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#00daf3]" data-icon="security">security</span>
+<h1 class="font-['Newsreader'] uppercase tracking-widest text-2xl font-bold text-[#00daf3] tracking-tighter">INTELLIGENCE COMMAND</h1>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<nav class="flex gap-6 font-['Space_Grotesk'] text-sm tracking-widest uppercase">
+<a class="text-[#00daf3] transition-colors" href="#">Operations</a>
+<a class="text-[#45464d] hover:text-[#00daf3] transition-colors" href="#">Tactical</a>
+<a class="text-[#45464d] hover:text-[#00daf3] transition-colors" href="#">Assets</a>
+<a class="text-[#45464d] hover:text-[#00daf3] transition-colors" href="#">Archive</a>
+</nav>
+<div class="flex items-center gap-3 bg-surface-container-low px-4 py-2 border-l border-primary">
+<span class="font-label text-xs text-primary uppercase">Stability Index</span>
+<span class="font-label text-sm text-primary">84.2%</span>
+</div>
+<span class="material-symbols-outlined text-[#00daf3] cursor-pointer" data-icon="settings_input_component">settings_input_component</span>
+</div>
+</header>
+<!-- Side Navigation Shell (Left) -->
+<aside class="fixed left-0 top-0 hidden md:flex flex-col h-full w-64 bg-[#111316] pt-24 z-40 border-none">
+<div class="px-6 mb-8">
+<h2 class="font-['Newsreader'] italic text-[#e9c349] text-xl">SOVEREIGN INTEL</h2>
+</div>
+<nav class="flex flex-col w-full">
+<a class="flex items-center gap-4 px-6 py-4 text-[#00daf3] font-bold border-l-2 border-[#00daf3] bg-[#1a1d21] font-['Inter'] text-sm tracking-tight transition-all duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="language">language</span>
+                OPERATIONS
+            </a>
+<a class="flex items-center gap-4 px-6 py-4 text-[#45464d] hover:bg-[#1a1d21] hover:text-white font-['Inter'] text-sm tracking-tight transition-all duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="hub">hub</span>
+                NETWORK
+            </a>
+<a class="flex items-center gap-4 px-6 py-4 text-[#45464d] hover:bg-[#1a1d21] hover:text-white font-['Inter'] text-sm tracking-tight transition-all duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="policy">policy</span>
+                DIPLOMACY
+            </a>
+<a class="flex items-center gap-4 px-6 py-4 text-[#45464d] hover:bg-[#1a1d21] hover:text-white font-['Inter'] text-sm tracking-tight transition-all duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="warning">warning</span>
+                THREATS
+            </a>
+<a class="flex items-center gap-4 px-6 py-4 text-[#45464d] hover:bg-[#1a1d21] hover:text-white font-['Inter'] text-sm tracking-tight transition-all duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="folder_open">folder_open</span>
+                ARCHIVE
+            </a>
+</nav>
+<div class="mt-auto p-6 space-y-4">
+<div class="bg-surface-container-lowest p-4">
+<p class="font-label text-[10px] uppercase text-outline mb-2">Threat Alert</p>
+<p class="font-body text-xs text-error">Encryption Breach detected in SECTOR 4</p>
+</div>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="md:pl-64 pt-20 pb-20 md:pb-0 h-screen overflow-hidden flex flex-col bg-surface-container-lowest">
+<!-- Network Integrity Header -->
+<section class="p-6 bg-surface border-b border-outline-variant/10">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-6">
+<div class="flex-1">
+<div class="flex justify-between items-end mb-2">
+<span class="font-label text-[10px] text-primary uppercase tracking-[0.2em]">Network Integrity &amp; Detection Risk</span>
+<span class="font-label text-sm text-secondary">ELEVATED RISK</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest flex">
+<div class="h-full bg-gradient-to-r from-primary to-secondary w-3/4"></div>
+<div class="h-full bg-tertiary w-1/12 animate-pulse"></div>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="text-right">
+<p class="font-label text-[10px] text-outline uppercase">Active Spies</p>
+<p class="font-headline text-2xl text-on-surface">12 / 15</p>
+</div>
+<div class="text-right border-l border-outline-variant/20 pl-4">
+<p class="font-label text-[10px] text-outline uppercase">Intel Yield</p>
+<p class="font-headline text-2xl text-secondary">4.2K<span class="text-xs">/HR</span></p>
+</div>
+</div>
+</div>
+</section>
+<!-- Dynamic Content Area -->
+<div class="flex-1 grid asymmetric-grid overflow-hidden">
+<!-- Left: Sector Status Cards -->
+<section class="p-6 overflow-y-auto space-y-4 bg-surface-container-low border-r border-outline-variant/10">
+<h3 class="font-label text-[11px] text-outline uppercase tracking-widest mb-6">Sector Diagnostics</h3>
+<!-- Financial Sector -->
+<div class="bg-surface-container-high p-4 border-l-4 border-primary">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h4 class="font-headline text-lg text-primary">Finance Hub</h4>
+<p class="font-label text-[10px] text-outline uppercase">Sector 01</p>
+</div>
+<span class="material-symbols-outlined text-primary" data-icon="account_balance">account_balance</span>
+</div>
+<div class="space-y-3">
+<div>
+<div class="flex justify-between text-[10px] font-label uppercase text-outline mb-1">
+<span>Infiltration</span>
+<span class="text-on-surface">78%</span>
+</div>
+<div class="h-1 bg-background w-full">
+<div class="h-full bg-primary w-[78%]"></div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div class="bg-background p-2">
+<p class="text-[9px] font-label text-outline uppercase">Risk</p>
+<p class="text-sm font-label text-error">Low</p>
+</div>
+<div class="bg-background p-2">
+<p class="text-[9px] font-label text-outline uppercase">Yield</p>
+<p class="text-sm font-label text-secondary">+125</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Media Sector -->
+<div class="bg-surface-container-high p-4 border-l-4 border-secondary">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h4 class="font-headline text-lg text-secondary">Propaganda Net</h4>
+<p class="font-label text-[10px] text-outline uppercase">Sector 02</p>
+</div>
+<span class="material-symbols-outlined text-secondary" data-icon="broadcast_on_home">broadcast_on_home</span>
+</div>
+<div class="space-y-3">
+<div>
+<div class="flex justify-between text-[10px] font-label uppercase text-outline mb-1">
+<span>Infiltration</span>
+<span class="text-on-surface">42%</span>
+</div>
+<div class="h-1 bg-background w-full">
+<div class="h-full bg-secondary w-[42%]"></div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div class="bg-background p-2">
+<p class="text-[9px] font-label text-outline uppercase">Risk</p>
+<p class="text-sm font-label text-tertiary">Critical</p>
+</div>
+<div class="bg-background p-2">
+<p class="text-[9px] font-label text-outline uppercase">Yield</p>
+<p class="text-sm font-label text-secondary">+210</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Military Sector -->
+<div class="bg-surface-container-high p-4 border-l-4 border-tertiary">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h4 class="font-headline text-lg text-tertiary">High Command</h4>
+<p class="font-label text-[10px] text-outline uppercase">Sector 03</p>
+</div>
+<span class="material-symbols-outlined text-tertiary" data-icon="military_tech">military_tech</span>
+</div>
+<div class="space-y-3">
+<div>
+<div class="flex justify-between text-[10px] font-label uppercase text-outline mb-1">
+<span>Infiltration</span>
+<span class="text-on-surface">12%</span>
+</div>
+<div class="h-1 bg-background w-full">
+<div class="h-full bg-tertiary w-[12%]"></div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div class="bg-background p-2">
+<p class="text-[9px] font-label text-outline uppercase">Risk</p>
+<p class="text-sm font-label text-on-surface">Scanning</p>
+</div>
+<div class="bg-background p-2">
+<p class="text-[9px] font-label text-outline uppercase">Yield</p>
+<p class="text-sm font-label text-on-surface-variant">Locked</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Center: Tactical Map -->
+<section class="relative bg-surface-container-lowest map-grid overflow-hidden">
+<div class="absolute inset-0 flex items-center justify-center opacity-40">
+<img alt="" class="w-full h-full object-cover mix-blend-screen opacity-20" data-alt="Abstract schematic world map with glowing cyan grid lines, data nodes, and technical geometric interface overlays on a dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVCLQCgfRNq7Z_iBifXjFspwSe2RUtScOjyM4a5qisG8Aw4z6bYSEK13pgyU_xoWRJy8FYQ6xHrDv2_daI-oGFlT9ly6xx8WUQpyXJPlHYEOuhUYaJfrlm-oKAhQvOlvNbvAuz6nvQfpD9V1Tg9k-63jeuJcxZ74qAMn_7tcHfSA8ml1m0YrpXjsNGJ-9lzFed09BiGKF_s6q87yvnhyZT-CAULm7xCX8F2VccgljX0tZ0Mz9yDmMkgxyVp6KPmwruP_Bu9Id5ecPO"/>
+</div>
+<!-- Schematic Map Elements -->
+<div class="absolute inset-0 pointer-events-none">
+<svg class="w-full h-full stroke-primary/30 fill-none" viewbox="0 0 800 600">
+<path d="M100,100 L300,150 L500,100 L700,200 L600,450 L200,500 Z" stroke-dasharray="5 5"></path>
+<circle class="animate-pulse" cx="300" cy="150" fill="#00daf3" r="4"></circle>
+<circle cx="600" cy="450" fill="#e9c349" r="4"></circle>
+<line stroke="#00daf3" stroke-width="0.5" x1="300" x2="600" y1="150" y2="450"></line>
+</svg>
+</div>
+<!-- Tactical Nodes -->
+<div class="absolute top-[20%] left-[35%] group cursor-pointer">
+<div class="p-4 bg-surface-container-high border border-primary relative">
+<span class="material-symbols-outlined text-primary text-4xl block" data-icon="radar">radar</span>
+<div class="absolute -top-1 -right-1 w-3 h-3 bg-primary animate-ping"></div>
+<div class="absolute top-full left-0 mt-2 hidden group-hover:block bg-background p-2 z-10 w-32 border border-outline-variant">
+<p class="text-[9px] font-label uppercase text-primary">Node: Alpha-9</p>
+<p class="text-[10px] text-on-surface">Target: Central Bank</p>
+</div>
+</div>
+</div>
+<div class="absolute bottom-[30%] right-[25%] group cursor-pointer">
+<div class="p-4 bg-surface-container-high border border-secondary">
+<span class="material-symbols-outlined text-secondary text-4xl block" data-icon="language">language</span>
+<div class="absolute top-full left-0 mt-2 hidden group-hover:block bg-background p-2 z-10 w-32 border border-outline-variant">
+<p class="text-[9px] font-label uppercase text-secondary">Node: Gamma-4</p>
+<p class="text-[10px] text-on-surface">Target: News Corp</p>
+</div>
+</div>
+</div>
+<!-- Active Mission Log overlay (bottom center) -->
+<div class="absolute bottom-6 left-1/2 -translate-x-1/2 w-2/3 glass-panel p-4 border border-outline-variant/20 max-h-32 overflow-y-auto">
+<div class="flex items-center gap-2 mb-2 border-b border-outline-variant/10 pb-1">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label text-[10px] uppercase text-outline">Real-time Mission Log</span>
+</div>
+<div class="space-y-1 font-label text-[11px] text-on-surface-variant lowercase">
+<p><span class="text-primary">[02:41]</span> agent 'phantom' infiltrated sector 01: finance hub</p>
+<p><span class="text-tertiary">[02:45]</span> warning: detection risk increased in sector 02</p>
+<p><span class="text-outline">[02:50]</span> intelligence packet 'black-box' received</p>
+<p><span class="text-primary">[02:52]</span> asset deployment 'reaper' confirmed in military grid</p>
+</div>
+</div>
+</section>
+<!-- Right: Deployment Drawer -->
+<aside class="p-6 bg-surface border-l border-outline-variant/10 flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<h3 class="font-label text-[11px] text-outline uppercase tracking-widest">Available Assets</h3>
+<button class="text-primary text-xs font-label uppercase">Recruit +</button>
+</div>
+<!-- Spy Card 1 -->
+<div class="bg-surface-container-low p-4 hover:bg-surface-container-high transition-colors cursor-grab active:cursor-grabbing border border-transparent hover:border-primary">
+<div class="flex gap-4 mb-4">
+<div class="w-12 h-12 bg-surface-container-highest">
+<img alt="" class="w-full h-full object-cover grayscale brightness-75" data-alt="Close up dramatic cinematic portrait of a professional spy in dark clothing with half shadow lighting and technical visor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDV-gO0dbOEdl4F5Iulgeh-aqeZr4vfAio2CeKU-L989nQzJO3uZVOdbzUqEgJwwOzoTjHJVjwLqKUqsSdgAvEjpDt1meCJKEyBVbK4fw9iBblE5CZWpnGlzyAEo3nwAFyhKEP9_puA7y_onI7_gytFPDtoj1YAKfENWo1z6bK2mf26KgAhG2lM4D1Rg2HNuuJLepOcgSC2GRegmjU_jsBo6p6pvaDB8XIG2OlVjrI38ZE_RwkG2zIbjcaKicIGD3ZTqiMUKxw56GQQ"/>
+</div>
+<div class="flex-1">
+<h5 class="font-headline text-base text-on-surface">Vesper Lyre</h5>
+<p class="text-[9px] font-label text-outline uppercase">Class: Infiltrator</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-4">
+<div>
+<p class="text-[9px] font-label text-outline uppercase mb-1">Scheming</p>
+<div class="h-1 bg-background w-full">
+<div class="h-full bg-primary w-[85%]"></div>
+</div>
+</div>
+<div>
+<p class="text-[9px] font-label text-outline uppercase mb-1">Charisma</p>
+<div class="h-1 bg-background w-full">
+<div class="h-full bg-secondary w-[40%]"></div>
+</div>
+</div>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-label text-sm text-secondary">COST: 450</span>
+<button class="bg-primary text-on-primary font-label text-[10px] px-3 py-1 uppercase tracking-tighter hover:brightness-110">Deploy</button>
+</div>
+</div>
+<!-- Spy Card 2 -->
+<div class="bg-surface-container-low p-4 hover:bg-surface-container-high transition-colors cursor-grab border border-transparent hover:border-secondary">
+<div class="flex gap-4 mb-4">
+<div class="w-12 h-12 bg-surface-container-highest">
+<img alt="" class="w-full h-full object-cover grayscale brightness-75" data-alt="Cinematic portrait of a male diplomat in a high-end suit, dramatic low-key lighting, intellectual and cold expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVuqmTFU0XV8bgG5X_2rP7jQJzLKdJfTeirblQ_vsQhzM-PafTZ7miDBpa8A0LQKV3ZhKv6Gd_FTN5ZhlPNtYXR5-ptCV2IiQrdjd8BkuQRYfjIPJxG8-TG33l6Et5PmZ9rRXbNGlTD-QxMKE_7xbOTsNZR1dFSf0yW-RuJj7fVavtqcZKl0YbQJbMU1jtyFYl5oSnQblIsNaJPj9jWSjq6JlptNhTfLTc17QUJGPf3N7Jc_7kI0__mT4TtI7JduDncexvyOtdQtQM"/>
+</div>
+<div class="flex-1">
+<h5 class="font-headline text-base text-on-surface">Marcus Thorne</h5>
+<p class="text-[9px] font-label text-outline uppercase">Class: Diplomat</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-4">
+<div>
+<p class="text-[9px] font-label text-outline uppercase mb-1">Scheming</p>
+<div class="h-1 bg-background w-full">
+<div class="h-full bg-primary w-[30%]"></div>
+</div>
+</div>
+<div>
+<p class="text-[9px] font-label text-outline uppercase mb-1">Charisma</p>
+<div class="h-1 bg-background w-full">
+<div class="h-full bg-secondary w-[92%]"></div>
+</div>
+</div>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-label text-sm text-secondary">COST: 620</span>
+<button class="bg-primary text-on-primary font-label text-[10px] px-3 py-1 uppercase tracking-tighter">Deploy</button>
+</div>
+</div>
+<div class="mt-auto border-t border-outline-variant/10 pt-4">
+<div class="flex justify-between items-center mb-4">
+<span class="font-label text-[10px] text-outline uppercase">Command Credits</span>
+<span class="font-label text-lg text-secondary">14,250</span>
+</div>
+<button class="w-full py-4 bg-surface-container-highest text-on-surface border border-outline-variant/50 hover:bg-surface-variant font-label uppercase tracking-[0.2em] text-xs">
+                        Execute Sequence
+                    </button>
+</div>
+</aside>
+</div>
+</main>
+<!-- Bottom Navigation Shell (Mobile Only) -->
+<footer class="md:hidden fixed bottom-0 w-full z-50 flex justify-around items-center h-16 px-4 bg-[#111316] border-none">
+<a class="flex flex-col items-center justify-center text-[#00daf3] bg-[#0c0e11] font-['Space_Grotesk'] text-[10px] uppercase p-2" href="#">
+<span class="material-symbols-outlined" data-icon="location_searching">location_searching</span>
+            DEPLOY
+        </a>
+<a class="flex flex-col items-center justify-center text-[#45464d] font-['Space_Grotesk'] text-[10px] uppercase p-2" href="#">
+<span class="material-symbols-outlined" data-icon="query_stats">query_stats</span>
+            ANALYZE
+        </a>
+<a class="flex flex-col items-center justify-center text-[#45464d] font-['Space_Grotesk'] text-[10px] uppercase p-2" href="#">
+<span class="material-symbols-outlined" data-icon="settings_backup_restore">settings_backup_restore</span>
+            RECALL
+        </a>
+<a class="flex flex-col items-center justify-center text-[#45464d] font-['Space_Grotesk'] text-[10px] uppercase p-2" href="#">
+<span class="material-symbols-outlined" data-icon="radar">radar</span>
+            STATUS
+        </a>
+</footer>
+</body></html>

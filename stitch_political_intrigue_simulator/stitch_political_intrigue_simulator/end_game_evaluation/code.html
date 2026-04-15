@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sovereign Evaluation - Shadow Control</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;family=Space+Grotesk:wght@300..700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#111316",
+                        "outline": "#909097",
+                        "on-tertiary": "#690007",
+                        "surface-variant": "#333538",
+                        "on-error-container": "#ffdad6",
+                        "tertiary": "#ffb4ac",
+                        "surface-container-high": "#282a2d",
+                        "tertiary-fixed": "#ffdad6",
+                        "surface": "#111316",
+                        "surface-bright": "#37393d",
+                        "inverse-primary": "#006875",
+                        "inverse-on-surface": "#2f3034",
+                        "secondary-fixed-dim": "#e9c349",
+                        "inverse-surface": "#e2e2e6",
+                        "surface-container-highest": "#333538",
+                        "primary-fixed": "#9cf0ff",
+                        "secondary-fixed": "#ffe088",
+                        "on-tertiary-container": "#e64842",
+                        "surface-container-low": "#1a1c1f",
+                        "on-secondary-fixed": "#241a00",
+                        "on-primary": "#00363d",
+                        "on-primary-container": "#008e9f",
+                        "error-container": "#93000a",
+                        "on-tertiary-fixed": "#410003",
+                        "on-primary-fixed-variant": "#004f58",
+                        "on-background": "#e2e2e6",
+                        "on-tertiary-fixed-variant": "#92030f",
+                        "on-error": "#690005",
+                        "on-secondary-fixed-variant": "#574500",
+                        "tertiary-fixed-dim": "#ffb4ac",
+                        "on-surface": "#e2e2e6",
+                        "on-primary-fixed": "#001f24",
+                        "error": "#ffb4ab",
+                        "outline-variant": "#45464d",
+                        "surface-tint": "#00daf3",
+                        "secondary": "#e9c349",
+                        "background": "#111316",
+                        "primary": "#00daf3",
+                        "on-secondary": "#3c2f00",
+                        "surface-container-lowest": "#0c0e11",
+                        "surface-container": "#1e2023",
+                        "primary-fixed-dim": "#00daf3",
+                        "on-secondary-container": "#342800",
+                        "tertiary-container": "#390002",
+                        "on-surface-variant": "#c6c6cd",
+                        "secondary-container": "#af8d11",
+                        "primary-container": "#001b1f"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Space Grotesk", "monospace"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-glow {
+            text-shadow: 0 0 10px rgba(0, 218, 243, 0.4);
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        body {
+            background-color: #111316;
+            color: #e2e2e6;
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="bg-[#111316] sticky top-0 z-50 flex justify-between items-center w-full px-6 py-4 border-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#00daf3] text-2xl" data-icon="terminal">terminal</span>
+<h1 class="text-2xl font-bold tracking-tighter uppercase text-[#00daf3] font-label">SOVEREIGN EVALUATION</h1>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-[#00daf3] border-b border-[#00daf3] font-label text-sm tracking-widest py-1 transition-colors opacity-80 duration-150" href="#">DEBRIEF</a>
+<a class="text-slate-500 font-label text-sm tracking-widest py-1 hover:bg-[#45464d]/20 transition-colors" href="#">INTEL</a>
+<a class="text-slate-500 font-label text-sm tracking-widest py-1 hover:bg-[#45464d]/20 transition-colors" href="#">DIPLOMACY</a>
+<a class="text-slate-500 font-label text-sm tracking-widest py-1 hover:bg-[#45464d]/20 transition-colors" href="#">RESTART</a>
+</nav>
+</header>
+<main class="max-w-7xl mx-auto px-6 mt-8">
+<!-- Hero Section: Outcome Summary -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-12">
+<div class="lg:col-span-8 bg-surface-container-low p-8 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 font-label text-xs text-primary/40 tracking-[0.2em]">CASE_FILE: 88-GAMMA</div>
+<h2 class="font-headline text-5xl md:text-7xl mb-6 italic font-extralight text-on-surface">SHADOW CONTROL</h2>
+<div class="max-w-2xl">
+<p class="font-body text-lg text-on-surface-variant leading-relaxed mb-6">
+                        The light of the public stage has dimmed, yet your grip has never been tighter. While the puppets dance in the grand halls of the capital, you reside in the periphery—the silent architect of every national motion. Policy is no longer debated; it is suggested, then manifested. 
+                    </p>
+<p class="font-body text-lg text-on-surface-variant leading-relaxed">
+                        You have successfully detached the concept of power from the burden of visibility. By ruling through the cracks of the bureaucracy, you remain untouchable by revolution, scandal, or time itself. The era of the Sovereign Intelligence has begun.
+                    </p>
+</div>
+<div class="mt-12 flex gap-4">
+<button class="bg-primary text-on-primary px-8 py-3 font-label font-bold tracking-widest hover:opacity-90 transition-all flex items-center gap-2">
+<span>ARCHIVE RECORD</span>
+<span class="material-symbols-outlined text-sm" data-icon="save">save</span>
+</button>
+<button class="border border-secondary text-secondary px-8 py-3 font-label font-bold tracking-widest hover:bg-secondary/10 transition-all">
+                        DIPLOMATIC LOGS
+                    </button>
+</div>
+</div>
+<!-- Evaluation Grade -->
+<div class="lg:col-span-4 bg-surface-container flex flex-col items-center justify-center text-center p-8 border-l-4 border-primary">
+<span class="font-label text-xs tracking-[0.4em] text-outline mb-4">EVALUATION GRADE</span>
+<div class="font-headline text-8xl md:text-9xl font-black text-primary text-glow">OMEGA</div>
+<div class="font-label text-xl tracking-tighter text-primary/60 -mt-4 mb-6">LEVEL</div>
+<div class="w-full bg-surface-container-highest p-4">
+<p class="font-label text-xs text-on-surface-variant uppercase tracking-widest">Efficiency Rating</p>
+<div class="h-1 bg-surface-container-low mt-2 overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary to-tertiary w-[98%]"></div>
+</div>
+<div class="flex justify-between mt-1">
+<span class="font-label text-[10px] text-outline">98.4%</span>
+<span class="font-label text-[10px] text-outline">NOMINAL</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid for Detailed Metrics -->
+<div class="bento-grid">
+<!-- Performance Metrics -->
+<div class="col-span-12 md:col-span-6 lg:col-span-4 bg-surface-container-low p-6 flex flex-col gap-6">
+<h3 class="font-label text-xs font-bold tracking-[0.3em] text-outline border-b border-outline-variant pb-2">PERFORMANCE METRICS</h3>
+<div class="space-y-6">
+<div class="flex justify-between items-end">
+<div>
+<span class="font-label text-xs text-outline block mb-1">POLITICAL CAPITAL</span>
+<span class="font-label text-2xl text-on-surface">14,200</span>
+</div>
+<span class="font-label text-xs text-primary">+12%</span>
+</div>
+<div class="flex justify-between items-end">
+<div>
+<span class="font-label text-xs text-outline block mb-1">GLOBAL INFLUENCE</span>
+<span class="font-label text-2xl text-on-surface">88%</span>
+</div>
+<span class="font-label text-xs text-primary">MAX</span>
+</div>
+<div class="flex justify-between items-end">
+<div>
+<span class="font-label text-xs text-outline block mb-1">TOTAL WEALTH</span>
+<span class="font-label text-2xl text-on-surface">₺4.2B</span>
+</div>
+<span class="font-label text-xs text-secondary">UNTRACEABLE</span>
+</div>
+<div class="flex justify-between items-end">
+<div>
+<span class="font-label text-xs text-outline block mb-1">LEGITIMACY</span>
+<span class="font-label text-2xl text-on-surface">14%</span>
+</div>
+<span class="font-label text-xs text-tertiary">MINIMAL</span>
+</div>
+</div>
+</div>
+<!-- Faction Alignment Map -->
+<div class="col-span-12 md:col-span-6 lg:col-span-5 bg-surface-container-lowest p-6">
+<h3 class="font-label text-xs font-bold tracking-[0.3em] text-outline border-b border-outline-variant pb-2 mb-6">FACTION ALIGNMENT</h3>
+<div class="space-y-4">
+<div class="group">
+<div class="flex justify-between font-label text-[10px] mb-1">
+<span>CONSERVATIVE</span>
+<span>LOYALTY: 92%</span>
+</div>
+<div class="h-2 bg-surface-container-highest">
+<div class="h-full bg-primary w-[92%] transition-all"></div>
+</div>
+</div>
+<div class="group">
+<div class="flex justify-between font-label text-[10px] mb-1">
+<span>LIBERAL</span>
+<span>LOYALTY: 12%</span>
+</div>
+<div class="h-2 bg-surface-container-highest">
+<div class="h-full bg-tertiary w-[12%] transition-all"></div>
+</div>
+</div>
+<div class="group">
+<div class="flex justify-between font-label text-[10px] mb-1">
+<span>CENTRAL</span>
+<span>LOYALTY: 45%</span>
+</div>
+<div class="h-2 bg-surface-container-highest">
+<div class="h-full bg-outline w-[45%] transition-all"></div>
+</div>
+</div>
+<div class="group">
+<div class="flex justify-between font-label text-[10px] mb-1">
+<span>RADICAL</span>
+<span>LOYALTY: 08%</span>
+</div>
+<div class="h-2 bg-surface-container-highest">
+<div class="h-full bg-tertiary w-[8%] transition-all"></div>
+</div>
+</div>
+<div class="group">
+<div class="flex justify-between font-label text-[10px] mb-1">
+<span>OPPORTUNIST</span>
+<span>LOYALTY: 100%</span>
+</div>
+<div class="h-2 bg-surface-container-highest">
+<div class="h-full bg-secondary w-[100%] transition-all"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Intelligence Dossier -->
+<div class="col-span-12 md:col-span-12 lg:col-span-3 bg-surface-container-high p-6 flex flex-col gap-4">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="visibility">visibility</span>
+<h3 class="font-label text-xs font-bold tracking-[0.3em] text-outline uppercase">INTEL DOSSIER</h3>
+</div>
+<div class="bg-surface-container-lowest p-4">
+<span class="font-label text-[10px] text-primary tracking-widest block mb-2">OPERATIVE STATUS</span>
+<div class="flex flex-col gap-3">
+<div class="flex justify-between items-center">
+<span class="font-body text-xs text-on-surface-variant">Active Spies</span>
+<span class="font-label text-sm text-on-surface">42</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-body text-xs text-on-surface-variant">Successful Infiltrations</span>
+<span class="font-label text-sm text-on-surface">118</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-body text-xs text-on-surface-variant">Black Op Funding</span>
+<span class="font-label text-sm text-secondary">CRITICAL</span>
+</div>
+</div>
+</div>
+<div class="relative group h-full min-h-[100px] overflow-hidden bg-surface-container-lowest">
+<img alt="Satellite intelligence" class="w-full h-full object-cover opacity-30 grayscale hover:scale-105 transition-transform duration-700" data-alt="Monochrome satellite view of an urban center at night with digital scanning overlays and grid lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzf2GkSjx5IkTX1hix23faNpcxg97Sjtoo70x1RdV6UjRLUvREE2ZyzQKxJxvUv_8ejW-iIXBo9QX-2ODzabPOi6fR3PT9zxBO1ubmCzdxzMWBYwRpWv4mqOK0VWTBVlmpXQM3ko4VJV2_koKMoEjnHycp2u0OmQ_ZUMBOyv1Zdhn7DuiT00s2cv1tzL5aTGrcbdLnktTRBa-qolodaIjDk-jkWZXr-UfUkKbxbjkZ3LLU8LbdC098YHiIRS7l_npSmePFrkyLR31g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-high to-transparent"></div>
+</div>
+</div>
+<!-- Historical Legacy -->
+<div class="col-span-12 bg-surface-container-lowest p-8 border-t border-outline-variant/10">
+<h3 class="font-label text-xs font-bold tracking-[0.3em] text-outline mb-8 uppercase text-center">HISTORICAL LEGACY: KEY DECISIONS</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+<!-- Connector line -->
+<div class="hidden md:block absolute top-12 left-0 w-full h-[1px] bg-outline-variant/30 z-0"></div>
+<div class="relative z-10 flex flex-col items-center text-center">
+<div class="w-24 h-24 bg-surface-container-highest flex items-center justify-center mb-6 border border-primary/20">
+<span class="font-label text-primary text-xl">D_01</span>
+</div>
+<h4 class="font-label text-sm text-on-surface mb-2">THE BLACKOUT INITIATIVE</h4>
+<p class="font-body text-xs text-on-surface-variant max-w-[200px]">Systematic dismantling of public communication channels to ensure information monopoly.</p>
+</div>
+<div class="relative z-10 flex flex-col items-center text-center">
+<div class="w-24 h-24 bg-surface-container-highest flex items-center justify-center mb-6 border border-secondary/20">
+<span class="font-label text-secondary text-xl">D_14</span>
+</div>
+<h4 class="font-label text-sm text-on-surface mb-2">FACTIONAL BETRAYAL</h4>
+<p class="font-body text-xs text-on-surface-variant max-w-[200px]">Orchestrating the internal collapse of the Liberal bloc during the Great Recession.</p>
+</div>
+<div class="relative z-10 flex flex-col items-center text-center">
+<div class="w-24 h-24 bg-surface-container-highest flex items-center justify-center mb-6 border border-tertiary/20">
+<span class="font-label text-tertiary text-xl">D_22</span>
+</div>
+<h4 class="font-label text-sm text-on-surface mb-2">SHADOW ASCENSION</h4>
+<p class="font-body text-xs text-on-surface-variant max-w-[200px]">The removal of the executive office in favor of an 'Emergency Council' of proxies.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<footer class="md:hidden fixed bottom-0 left-0 w-full bg-[#0c0e11] flex justify-around items-center px-4 h-16 z-50 shadow-[0_-10px_30px_rgba(0,0,0,0.5)] border-t border-[#45464d]/15">
+<button class="flex flex-col items-center justify-center text-[#00daf3] scale-105 transition-all">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="text-[11px] font-medium uppercase tracking-widest font-label">DEBRIEF</span>
+</button>
+<button class="flex flex-col items-center justify-center text-slate-600 hover:text-white transition-all">
+<span class="material-symbols-outlined" data-icon="database">database</span>
+<span class="text-[11px] font-medium uppercase tracking-widest font-label">INTEL</span>
+</button>
+<button class="flex flex-col items-center justify-center text-slate-600 hover:text-white transition-all">
+<span class="material-symbols-outlined" data-icon="public">public</span>
+<span class="text-[11px] font-medium uppercase tracking-widest font-label">DIPLOMACY</span>
+</button>
+<button class="flex flex-col items-center justify-center text-slate-600 hover:text-white transition-all">
+<span class="material-symbols-outlined" data-icon="refresh">refresh</span>
+<span class="text-[11px] font-medium uppercase tracking-widest font-label">RESTART</span>
+</button>
+</footer>
+</body></html>

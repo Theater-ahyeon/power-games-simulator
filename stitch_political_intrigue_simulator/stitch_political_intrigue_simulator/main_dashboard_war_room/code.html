@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>POWER GAME | Command Center</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#e9c349",
+                    "outline-variant": "#45464d",
+                    "tertiary-fixed": "#ffdad6",
+                    "surface-container-lowest": "#0c0e11",
+                    "inverse-on-surface": "#2f3034",
+                    "surface-variant": "#333538",
+                    "inverse-primary": "#006875",
+                    "primary": "#00daf3",
+                    "error": "#ffb4ab",
+                    "error-container": "#93000a",
+                    "background": "#111316",
+                    "on-secondary-fixed": "#241a00",
+                    "on-primary": "#00363d",
+                    "secondary-fixed": "#ffe088",
+                    "inverse-surface": "#e2e2e6",
+                    "on-error-container": "#ffdad6",
+                    "outline": "#909097",
+                    "secondary": "#e9c349",
+                    "surface-dim": "#111316",
+                    "surface-container": "#1e2023",
+                    "surface-tint": "#00daf3",
+                    "primary-fixed": "#9cf0ff",
+                    "surface-bright": "#37393d",
+                    "on-tertiary-fixed": "#410003",
+                    "on-error": "#690005",
+                    "on-secondary": "#3c2f00",
+                    "secondary-container": "#af8d11",
+                    "on-tertiary-container": "#e64842",
+                    "on-surface-variant": "#c6c6cd",
+                    "on-primary-fixed-variant": "#004f58",
+                    "on-tertiary": "#690007",
+                    "on-surface": "#e2e2e6",
+                    "on-primary-container": "#008e9f",
+                    "tertiary": "#ffb4ac",
+                    "primary-container": "#001b1f",
+                    "surface-container-high": "#282a2d",
+                    "primary-fixed-dim": "#00daf3",
+                    "tertiary-fixed-dim": "#ffb4ac",
+                    "surface-container-highest": "#333538",
+                    "on-secondary-fixed-variant": "#574500",
+                    "surface": "#111316",
+                    "on-secondary-container": "#342800",
+                    "surface-container-low": "#1a1c1f",
+                    "on-primary-fixed": "#001f24",
+                    "on-background": "#e2e2e6",
+                    "tertiary-container": "#390002",
+                    "on-tertiary-fixed-variant": "#92030f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Inter"],
+                    "label": ["Space Grotesk"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass-panel {
+            background: rgba(40, 42, 45, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        body {
+            background-color: #0c0e11;
+            color: #e2e2e6;
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen pb-24 md:pb-0">
+<header class="bg-[#0c0e11] dark:bg-[#0c0e11] flex justify-between items-center w-full px-6 py-4 border-b border-white/5 sticky top-0 z-50">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-surface-container-high flex items-center justify-center border border-primary/20">
+<span class="material-symbols-outlined text-primary">security</span>
+</div>
+<h1 class="font-['Newsreader'] italic font-bold tracking-widest text-[#00daf3] text-2xl">POWER GAME</h1>
+</div>
+<nav class="hidden md:flex gap-8">
+<a class="text-[#00daf3] border-b border-[#00daf3] py-1 font-['Space_Grotesk'] text-sm tracking-widest" href="#">DASHBOARD</a>
+<a class="text-slate-500 font-['Space_Grotesk'] py-1 text-sm tracking-widest hover:text-white transition-colors" href="#">FACTIONS</a>
+<a class="text-slate-500 font-['Space_Grotesk'] py-1 text-sm tracking-widest hover:text-white transition-colors" href="#">INTELLIGENCE</a>
+<a class="text-slate-500 font-['Space_Grotesk'] py-1 text-sm tracking-widest hover:text-white transition-colors" href="#">STRATEGY</a>
+</nav>
+<div class="text-right hidden lg:block">
+<p class="font-['Space_Grotesk'] text-[10px] text-outline-variant tracking-tighter uppercase">Active Dossier: Sovereign Prime</p>
+<p class="font-['Space_Grotesk'] text-xs text-primary font-bold">PC: 450 | INF: 82 | INF: 12% | WTH: 2.4M</p>
+</div>
+</header>
+<div class="w-full bg-surface-container-lowest px-6 py-3 border-b border-white/5 overflow-x-auto">
+<div class="flex items-center space-x-8 min-w-max">
+<div class="flex flex-col">
+<span class="font-['Space_Grotesk'] text-[9px] text-outline-variant uppercase tracking-[0.2em]">Political Capital</span>
+<span class="font-['Space_Grotesk'] text-sm text-secondary font-bold">450 <span class="text-[10px] text-primary">+12</span></span>
+</div>
+<div class="flex flex-col">
+<span class="font-['Space_Grotesk'] text-[9px] text-outline-variant uppercase tracking-[0.2em]">Global Influence</span>
+<span class="font-['Space_Grotesk'] text-sm text-on-surface font-bold">82%</span>
+</div>
+<div class="flex flex-col">
+<span class="font-['Space_Grotesk'] text-[9px] text-outline-variant uppercase tracking-[0.2em]">Intel Liquidity</span>
+<span class="font-['Space_Grotesk'] text-sm text-on-surface font-bold">12.4 TB</span>
+</div>
+<div class="flex flex-col">
+<span class="font-['Space_Grotesk'] text-[9px] text-outline-variant uppercase tracking-[0.2em]">Wealth Reserve</span>
+<span class="font-['Space_Grotesk'] text-sm text-secondary-fixed-dim font-bold">$2.4M</span>
+</div>
+<div class="flex flex-col">
+<span class="font-['Space_Grotesk'] text-[9px] text-outline-variant uppercase tracking-[0.2em]">Military Readiness</span>
+<span class="font-['Space_Grotesk'] text-sm text-tertiary font-bold">DEFCON 3</span>
+</div>
+<div class="flex flex-col">
+<span class="font-['Space_Grotesk'] text-[9px] text-outline-variant uppercase tracking-[0.2em]">Reputation Index</span>
+<span class="font-['Space_Grotesk'] text-sm text-on-surface font-bold">STEADFAST</span>
+</div>
+<div class="flex flex-col">
+<span class="font-['Space_Grotesk'] text-[9px] text-outline-variant uppercase tracking-[0.2em]">Public Legitimacy</span>
+<span class="font-['Space_Grotesk'] text-sm text-on-surface font-bold">64.2%</span>
+</div>
+</div>
+</div>
+<main class="p-6 grid grid-cols-1 md:grid-cols-12 gap-6">
+<section class="md:col-span-8 space-y-6">
+<div class="bg-surface-container-low p-6 border-l-2 border-primary">
+<div class="flex justify-between items-start mb-6">
+<div>
+<h2 class="font-['Newsreader'] text-3xl italic mb-1">Current Status: Volatile</h2>
+<p class="font-['Inter'] text-sm text-outline-variant">Strategic Intelligence Briefing - Cycle 42, Segment 08</p>
+</div>
+<div class="text-right">
+<span class="inline-block px-3 py-1 bg-error-container text-tertiary text-[10px] font-['Space_Grotesk'] tracking-widest font-bold">THREAT LEVEL: HIGH</span>
+</div>
+</div>
+<div class="space-y-4">
+<div class="bg-surface-container-lowest p-4 border border-white/5 flex items-start gap-4">
+<span class="material-symbols-outlined text-tertiary mt-1">warning</span>
+<div>
+<p class="font-['Space_Grotesk'] text-xs text-tertiary font-bold mb-1">UNREST IN THE NORTHERN RIM</p>
+<p class="text-sm text-on-surface-variant leading-relaxed">Local labor unions have aligned with the Technocratic Union. Industrial output is projected to drop by 15% if no intervention occurs.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 border border-white/5 flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">info</span>
+<div>
+<p class="font-['Space_Grotesk'] text-xs text-primary font-bold mb-1">ENCRYPTION BREAKTHROUGH</p>
+<p class="text-sm text-on-surface-variant leading-relaxed">Intelligence assets have breached the Old Guard's private communication nodes. New blackmail options available in the Strategy panel.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-surface-container p-6">
+<h3 class="font-['Newsreader'] text-xl mb-4">Territorial Control</h3>
+<div class="h-48 w-full bg-surface-container-lowest relative overflow-hidden group">
+<img class="w-full h-full object-cover opacity-40 mix-blend-luminosity group-hover:opacity-60 transition-opacity" data-alt="abstract top-down tactical map with glowing blue network lines and dark terrain highlights in a digital war room style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRCUY2a9QdkWb-ZnhWEZ_z13X2bj1A7eEWM39ZNcFjkyYUyiR-9ZMzddetnzvVZARsfxAOZ0MCWF90U3aAZLwUGRTEWvul8_Jjbzpdcs2T7HEJ3xhGIox2fWAbxOyagku_B4VznMIfAfrxihjBvBu28n1KepT1h9JPfnAF2VdGKozckNFOT9Ia7FdTevhnxPVb3e4_Z3skZeXQf6yY4QybiHPseZP4_0N9E2KQBecRNJNxh0CFtoQVK7OIfjVMmNy-5UiEK-5VmpbC"/>
+<div class="absolute inset-0 p-4 flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<span class="bg-[#0c0e11]/80 px-2 py-1 text-[10px] font-['Space_Grotesk'] text-primary border border-primary/20 uppercase">Vector: Omega-7</span>
+<span class="text-white text-[10px] font-['Space_Grotesk']">STABLE</span>
+</div>
+<div class="bg-[#0c0e11]/80 p-2 border border-white/10">
+<p class="text-[10px] font-['Space_Grotesk'] text-outline-variant mb-1 uppercase tracking-widest">Global Stability</p>
+<div class="w-full h-1 bg-surface-container-highest">
+<div class="bg-gradient-to-r from-secondary to-tertiary h-full w-[64%]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container p-6 flex flex-col justify-between">
+<div>
+<h3 class="font-['Newsreader'] text-xl mb-4">Pending Decrees</h3>
+<div class="space-y-4">
+<button class="w-full text-left p-3 bg-surface-container-low hover:bg-surface-container-high transition-colors flex items-center justify-between border-r-2 border-transparent hover:border-primary">
+<span class="text-xs font-['Inter']">Nationalize Energy Grid</span>
+<span class="font-['Space_Grotesk'] text-[10px] text-secondary">-$500K</span>
+</button>
+<button class="w-full text-left p-3 bg-surface-container-low hover:bg-surface-container-high transition-colors flex items-center justify-between border-r-2 border-transparent hover:border-tertiary">
+<span class="text-xs font-['Inter']">Censor Dissident Broadcasts</span>
+<span class="font-['Space_Grotesk'] text-[10px] text-tertiary">+15 CR</span>
+</button>
+</div>
+</div>
+<button class="mt-8 bg-primary text-on-primary py-4 font-['Space_Grotesk'] font-bold tracking-[0.2em] uppercase text-sm hover:opacity-90 active:scale-[0.98] transition-all">
+                        EXECUTE ACTION
+                    </button>
+</div>
+</div>
+</section>
+<aside class="md:col-span-4 space-y-6">
+<div class="bg-surface-container p-6">
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-['Newsreader'] text-xl">Faction Standings</h3>
+<span class="material-symbols-outlined text-outline-variant text-sm">filter_list</span>
+</div>
+<div class="space-y-5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-sm">memory</span>
+</div>
+<span class="text-xs font-['Inter'] font-semibold tracking-wide">Technocratic Union</span>
+</div>
+<div class="text-right">
+<p class="font-['Space_Grotesk'] text-xs text-primary font-bold">ALLIED</p>
+<p class="font-['Space_Grotesk'] text-[9px] text-outline-variant">88% SYNC</p>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-sm">balance</span>
+</div>
+<span class="text-xs font-['Inter'] font-semibold tracking-wide">The Old Guard</span>
+</div>
+<div class="text-right">
+<p class="font-['Space_Grotesk'] text-xs text-secondary font-bold">TENSE</p>
+<p class="font-['Space_Grotesk'] text-[9px] text-outline-variant">34% TRUST</p>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-sm">skull</span>
+</div>
+<span class="text-xs font-['Inter'] font-semibold tracking-wide">Shadow Syndicate</span>
+</div>
+<div class="text-right">
+<p class="font-['Space_Grotesk'] text-xs text-tertiary font-bold">HOSTILE</p>
+<p class="font-['Space_Grotesk'] text-[9px] text-outline-variant">DEEP COVER</p>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface text-sm">church</span>
+</div>
+<span class="text-xs font-['Inter'] font-semibold tracking-wide">Ecclesia Mandate</span>
+</div>
+<div class="text-right">
+<p class="font-['Space_Grotesk'] text-xs text-on-surface font-bold">NEUTRAL</p>
+<p class="font-['Space_Grotesk'] text-[9px] text-outline-variant">50% INFLUENCE</p>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant text-sm">account_balance</span>
+</div>
+<span class="text-xs font-['Inter'] font-semibold tracking-wide">Mercantile Guild</span>
+</div>
+<div class="text-right">
+<p class="font-['Space_Grotesk'] text-xs text-on-surface-variant font-bold">INDETERMINATE</p>
+<p class="font-['Space_Grotesk'] text-[9px] text-outline-variant">DEBT: 2.4M</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-high p-6 border border-white/5">
+<h3 class="font-['Newsreader'] text-xl mb-4">Intelligence Feed</h3>
+<div class="space-y-4">
+<div class="p-3 border-l-2 border-outline-variant bg-surface-container-low">
+<p class="font-['Space_Grotesk'] text-[10px] text-outline-variant mb-1 uppercase tracking-widest">14:22:01</p>
+<p class="text-xs text-on-surface-variant leading-relaxed">Intercepted data packet from Sect-04 shows increased encryption strength.</p>
+</div>
+<div class="p-3 border-l-2 border-outline-variant bg-surface-container-low">
+<p class="font-['Space_Grotesk'] text-[10px] text-outline-variant mb-1 uppercase tracking-widest">13:05:44</p>
+<p class="text-xs text-on-surface-variant leading-relaxed">Diplomatic courier from Mercantile Guild requesting an audience.</p>
+</div>
+</div>
+</div>
+</aside>
+</main>
+<footer class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center bg-[#111316] border-t border-white/10 shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
+<a class="flex flex-col items-center justify-center text-[#00daf3] bg-white/5 p-3 w-1/4 tactile transition-transform active:scale-95" href="#">
+<span class="material-symbols-outlined mb-1">grid_view</span>
+<span class="text-[10px] font-medium font-['Space_Grotesk'] tracking-widest uppercase">DASHBOARD</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 p-3 w-1/4 hover:text-white hover:bg-white/5 transition-colors active:scale-95" href="#">
+<span class="material-symbols-outlined mb-1">groups</span>
+<span class="text-[10px] font-medium font-['Space_Grotesk'] tracking-widest uppercase">FACTIONS</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 p-3 w-1/4 hover:text-white hover:bg-white/5 transition-colors active:scale-95" href="#">
+<span class="material-symbols-outlined mb-1">visibility</span>
+<span class="text-[10px] font-medium font-['Space_Grotesk'] tracking-widest uppercase">INTELLIGENCE</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 p-3 w-1/4 hover:text-white hover:bg-white/5 transition-colors active:scale-95" href="#">
+<span class="material-symbols-outlined mb-1">account_tree</span>
+<span class="text-[10px] font-medium font-['Space_Grotesk'] tracking-widest uppercase">STRATEGY</span>
+</a>
+</footer>
+</body></html>

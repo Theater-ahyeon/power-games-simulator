@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NEUTRALIZE PROTOCOL | Treaty Negotiation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;0,6..72,800;1,6..72,400&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#3c2f00",
+                        "surface-bright": "#37393d",
+                        "background": "#111316",
+                        "tertiary-fixed": "#ffdad6",
+                        "on-primary": "#00363d",
+                        "on-primary-fixed-variant": "#004f58",
+                        "on-primary-fixed": "#001f24",
+                        "secondary-fixed-dim": "#e9c349",
+                        "inverse-on-surface": "#2f3034",
+                        "primary-fixed-dim": "#00daf3",
+                        "on-background": "#e2e2e6",
+                        "primary-container": "#001b1f",
+                        "inverse-surface": "#e2e2e6",
+                        "surface-container-highest": "#333538",
+                        "surface-container": "#1e2023",
+                        "tertiary-container": "#390002",
+                        "on-surface-variant": "#c6c6cd",
+                        "tertiary-fixed-dim": "#ffb4ac",
+                        "on-tertiary-container": "#e64842",
+                        "surface-variant": "#333538",
+                        "primary": "#00daf3",
+                        "outline-variant": "#45464d",
+                        "on-tertiary-fixed": "#410003",
+                        "error": "#ffb4ab",
+                        "surface": "#111316",
+                        "secondary-fixed": "#ffe088",
+                        "secondary": "#e9c349",
+                        "surface-container-low": "#1a1c1f",
+                        "on-secondary-fixed-variant": "#574500",
+                        "on-primary-container": "#008e9f",
+                        "primary-fixed": "#9cf0ff",
+                        "on-error": "#690005",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#92030f",
+                        "error-container": "#93000a",
+                        "surface-container-lowest": "#0c0e11",
+                        "surface-container-high": "#282a2d",
+                        "secondary-container": "#af8d11",
+                        "on-surface": "#e2e2e6",
+                        "tertiary": "#ffb4ac",
+                        "on-tertiary": "#690007",
+                        "surface-dim": "#111316",
+                        "outline": "#909097",
+                        "on-secondary-fixed": "#241a00",
+                        "surface-tint": "#00daf3",
+                        "on-secondary-container": "#342800",
+                        "inverse-primary": "#006875"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Space Grotesk", "monospace"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .custom-glass {
+            background: rgba(40, 42, 45, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        .cta-gradient {
+            background: linear-gradient(45deg, #00daf3, #008e9f);
+        }
+        .tension-gradient {
+            background: linear-gradient(to right, #e9c349, #ffb4ac);
+        }
+        /* Remove default scrollbar for cleaner UI */
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: #0c0e11; }
+        ::-webkit-scrollbar-thumb { background: #333538; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-[#0c0e11] border-none flex justify-between items-center px-6 py-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#00daf3]" data-icon="security">security</span>
+<h1 class="font-serif text-2xl font-black text-[#00daf3] tracking-widest uppercase">NEUTRALIZE PROTOCOL</h1>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex items-center gap-8 font-serif text-slate-100 uppercase tracking-tighter">
+<a class="text-[#00daf3] hover:text-white transition-colors" href="#">Dossier</a>
+<a class="text-slate-500 hover:text-white transition-colors" href="#">Tactical Map</a>
+<a class="text-slate-500 hover:text-white transition-colors" href="#">Diplomacy</a>
+<a class="text-slate-500 hover:text-white transition-colors" href="#">Archive</a>
+</nav>
+<span class="material-symbols-outlined text-[#00daf3] cursor-pointer active:scale-95 duration-75" data-icon="monitoring">monitoring</span>
+</div>
+</header>
+<main class="pt-24 pb-20 px-6 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Left Column: Parties Involved -->
+<section class="lg:col-span-4 space-y-6">
+<div class="bg-surface-container-low p-6 space-y-8">
+<h2 class="font-headline text-2xl font-bold italic border-l-4 border-secondary pl-4">PARTIES INVOLVED</h2>
+<!-- Player Faction -->
+<div class="flex items-center gap-4 bg-surface-container-lowest p-4">
+<img alt="Player Avatar" class="w-16 h-16 grayscale brightness-75 border border-outline-variant" data-alt="Close-up portrait of a stern intelligence officer in a dark suit, cinematic low-key lighting, moody blue and grey tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNi5-GYUQHJ5JVMtWCl7JYcZmLBU_AmGFNpdefH_j9KFBlhOX_i0_iimHggtGkjN1Ilg7HQsiEgiCWDUxSpuUKFkMsbO3ozloKwU6AiUoSrziw3mk4-bbYeMBRDEMtOFg1cc3ye_XtsEfGI2zXgETnhMyM8vQHeaCOhzTOG_tm8ZX74la2BetZHGFeQ0-T2Auq_YOee3_3P7wO4ZhXiQ_4TvOwmNirtlH9JUNYRzJDAHFYWHqv7OkERD_vfjIHJlgRImFes3kwxzee"/>
+<div>
+<p class="font-label text-xs text-primary uppercase tracking-widest">Sovereign Intel</p>
+<p class="font-headline text-xl text-on-surface">Director Vane</p>
+</div>
+</div>
+<div class="flex justify-center">
+<span class="material-symbols-outlined text-outline-variant text-4xl" data-icon="sync_alt">sync_alt</span>
+</div>
+<!-- Rival Faction -->
+<div class="flex items-center gap-4 bg-surface-container-highest p-4">
+<img alt="Rival Avatar" class="w-16 h-16 grayscale brightness-75 border border-secondary" data-alt="Portrait of an older statesman with gray hair, sharp features, wearing a formal black overcoat, dramatic high-contrast lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL-N8mz9ObY_D1D_1xOQ5mvzK_h7CRsDRbjt6ESZOpSDaJOKTlAQLWd6aLnE6DIQj9sgXNMT0RGSWUTL67ANwYpz05B84F2f1ge6_rUS-e-YURuAot4C-DbZoecAe_sHKm-A3tg9BtdmCUDDogO7-JH7mgSjn6QllASLsljwUtsB6E26X_gYtl8U2lgjUV5j-4pIe7K7mT6g5lzP323iNd-Cx_9lRv8yyRDn3AzdMz2fnDVRmF0E_Q7RjH2Y4w0xjc_Nv_rPBz61D2"/>
+<div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest">Conservative Alliance</p>
+<p class="font-headline text-xl text-on-surface">Chancellor Krell</p>
+</div>
+</div>
+<!-- Trust Levels -->
+<div class="space-y-4 pt-4">
+<div class="flex justify-between items-end">
+<span class="font-label text-xs text-on-surface-variant uppercase">Current Alignment</span>
+<span class="font-label text-sm text-secondary">42% STABLE</span>
+</div>
+<div class="h-1 bg-surface-container-highest w-full">
+<div class="h-full bg-secondary" style="width: 42%"></div>
+</div>
+</div>
+</div>
+<!-- Strategic Impact Module -->
+<div class="bg-surface-container-low p-6 space-y-4">
+<h3 class="font-label text-xs text-on-surface-variant uppercase tracking-[0.2em]">Strategic Impact Analysis</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-lowest p-4 space-y-2">
+<p class="font-label text-[10px] text-primary uppercase">Immediate Gain</p>
+<p class="font-headline text-2xl text-on-surface">+20 REP</p>
+<p class="font-body text-xs text-on-surface-variant">Diplomatic leverage increase.</p>
+</div>
+<div class="bg-surface-container-lowest p-4 space-y-2">
+<p class="font-label text-[10px] text-tertiary uppercase">Long-term Risk</p>
+<p class="font-headline text-lg text-on-surface">ENTANGLEMENT</p>
+<p class="font-body text-xs text-on-surface-variant">High risk of forced intervention.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Right Column: Negotiation Workspace -->
+<section class="lg:col-span-8 space-y-6">
+<!-- Treaty Configuration -->
+<div class="bg-surface-container p-6 space-y-6">
+<header class="flex justify-between items-center">
+<h2 class="font-headline text-3xl font-black italic tracking-tight">TREATY CONFIGURATION</h2>
+<span class="font-label text-xs text-on-surface-variant">TX-ID: 882-OMEGA</span>
+</header>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<!-- Treaty Option 1 -->
+<button class="flex flex-col text-left p-5 bg-surface-container-lowest border-l-4 border-primary transition-all hover:bg-surface-container-high group">
+<span class="material-symbols-outlined text-primary mb-3" data-icon="visibility_off">visibility_off</span>
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant group-hover:text-primary">Selected Protocol</p>
+<p class="font-headline text-lg text-on-surface">Intelligence Sharing</p>
+</button>
+<!-- Treaty Option 2 -->
+<button class="flex flex-col text-left p-5 bg-surface-container-low border-l-4 border-transparent hover:border-outline-variant transition-all hover:bg-surface-container-high group">
+<span class="material-symbols-outlined text-on-surface-variant mb-3 group-hover:text-on-surface" data-icon="shield">shield</span>
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Defense Tier 2</p>
+<p class="font-headline text-lg text-on-surface">Military Pact</p>
+</button>
+<!-- Treaty Option 3 -->
+<button class="flex flex-col text-left p-5 bg-surface-container-low border-l-4 border-transparent hover:border-outline-variant transition-all hover:bg-surface-container-high group">
+<span class="material-symbols-outlined text-on-surface-variant mb-3 group-hover:text-on-surface" data-icon="paid">paid</span>
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Economic Flow</p>
+<p class="font-headline text-lg text-on-surface">Resource Tribute</p>
+</button>
+</div>
+<!-- Terms & Conditions -->
+<div class="bg-surface-container-lowest p-6 space-y-6">
+<h3 class="font-label text-xs text-on-surface-variant uppercase tracking-[0.2em]">Mandatory Terms</h3>
+<div class="space-y-4">
+<div class="flex items-center justify-between pb-4 border-b border-outline-variant/20">
+<div>
+<p class="font-body font-bold text-on-surface">Resource Tribute</p>
+<p class="font-body text-xs text-on-surface-variant">Annual delivery of 500 units of refined isotope.</p>
+</div>
+<span class="font-label text-primary font-bold">15.0% APY</span>
+</div>
+<div class="flex items-center justify-between pb-4 border-b border-outline-variant/20">
+<div>
+<p class="font-body font-bold text-on-surface">Defense Commitment</p>
+<p class="font-body text-xs text-on-surface-variant">Automatic casus belli if Alliance borders are breached.</p>
+</div>
+<span class="font-label text-tertiary uppercase text-xs">High Exposure</span>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<p class="font-body font-bold text-on-surface">Duration</p>
+<p class="font-body text-xs text-on-surface-variant">Binding for 10 fiscal quarters.</p>
+</div>
+<span class="font-label text-on-surface">42 MONTHS</span>
+</div>
+</div>
+</div>
+<!-- Trust & Betrayal Meter -->
+<div class="space-y-4 pt-6">
+<div class="flex justify-between items-center">
+<h3 class="font-label text-xs text-on-surface-variant uppercase tracking-[0.2em]">Tension &amp; Betrayal Forecast</h3>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label text-[10px] text-tertiary uppercase">Critical Threshold</span>
+</div>
+</div>
+<div class="h-6 bg-surface-container-lowest w-full relative overflow-hidden">
+<div class="h-full tension-gradient" style="width: 78%"></div>
+<div class="absolute inset-0 flex items-center justify-center font-label text-[10px] tracking-[0.3em] font-bold text-on-primary">BETRAYAL PAYOUT: 50,000 CREDITS</div>
+</div>
+<p class="font-body text-[11px] text-on-surface-variant italic">Warning: Approving this treaty increases regional instability by 12 points.</p>
+</div>
+</div>
+<!-- Negotiation Actions -->
+<div class="flex flex-col md:flex-row gap-4">
+<button class="flex-1 py-4 cta-gradient text-on-primary font-headline text-xl font-bold uppercase tracking-widest active:scale-[0.98] transition-transform">
+                    Finalize Treaty
+                </button>
+<button class="px-8 py-4 bg-transparent border border-secondary text-secondary font-headline text-lg hover:bg-secondary/10 transition-colors">
+                    Counter-Offer
+                </button>
+<button class="px-8 py-4 bg-transparent border border-tertiary text-tertiary font-headline text-lg hover:bg-tertiary/10 transition-colors">
+                    Withdraw
+                </button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 bg-[#111316]/90 backdrop-blur-xl border-t border-slate-800/50 flex justify-around items-center h-16">
+<div class="flex flex-col items-center justify-center text-slate-600 p-2">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-mono text-[10px] tracking-tighter uppercase">Intel</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-600 p-2">
+<span class="material-symbols-outlined" data-icon="terminal">terminal</span>
+<span class="font-mono text-[10px] tracking-tighter uppercase">Command</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#00daf3] bg-[#00daf3]/10 p-2">
+<span class="material-symbols-outlined" data-icon="gavel">gavel</span>
+<span class="font-mono text-[10px] tracking-tighter uppercase">Politics</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-600 p-2">
+<span class="material-symbols-outlined" data-icon="warning">warning</span>
+<span class="font-mono text-[10px] tracking-tighter uppercase">Threats</span>
+</div>
+</nav>
+<!-- Tactical HUD Overlay (Subtle Aesthetic Element) -->
+<div class="fixed top-0 left-0 w-full h-full pointer-events-none border-[20px] border-surface-container-lowest/5 opacity-30"></div>
+<div class="fixed bottom-24 right-8 hidden lg:block">
+<div class="bg-surface-container-high/60 backdrop-blur p-4 space-y-2 border-l-2 border-primary">
+<p class="font-label text-[10px] text-primary uppercase">Encryption Status</p>
+<p class="font-label text-xs text-on-surface">SECURE LINE ACTIVE</p>
+<div class="flex gap-1">
+<div class="w-1 h-3 bg-primary animate-pulse"></div>
+<div class="w-1 h-3 bg-primary/40"></div>
+<div class="w-1 h-3 bg-primary/60"></div>
+<div class="w-1 h-3 bg-primary"></div>
+</div>
+</div>
+</div>
+</body></html>

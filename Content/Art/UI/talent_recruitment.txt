@@ -1,0 +1,197 @@
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                                      ║
+║                    ███████╗██╗   ██╗██████╗ ███████╗██████╗ ███╗   ███╗███████╗                    ║
+║                    ██╔════╝╚██╗ ██╔╝██╔══██╗██╔════╝██╔══██╗████╗ ████║██╔════╝                    ║
+║                    █████╗   ╚████╔╝ ██████╔╝█████╗  ██████╔╝██╔████╔██║███████╗                    ║
+║                    ██╔══╝    ╚██╔╝  ██╔═══╝ ██╔══╝  ██╔══██╗██║╚██╔╝██║╚════██║                    ║
+║                    ███████╗   ██║   ██║     ███████╗██║  ██║██║ ╚═╝ ██║███████║                    ║
+║                    ╚══════╝   ╚═╝   ╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝                    ║
+║                                                                                                      ║
+║              ██████╗ ███████╗████████╗██╗         ██████╗ ███████╗██████╗ ███╗   ███╗███████╗    ║
+║              ██╔══██╗██╔════╝╚══██╔══╝██║         ██╔══██╗██╔════╝██╔══██╗████╗ ████║██╔════╝    ║
+║              ██████╔╝█████╗     ██║   ██║         ██████╔╝█████╗  ██████╔╝██╔████╔██║█████╗      ║
+║              ██╔══██╗██╔══╝     ██║   ██║         ██╔══██╗██╔══╝  ██╔══██╗██║╚██╔╝██║██╔══╝      ║
+║              ██║  ██║███████╗   ██║   ███████╗    ██║  ██║███████╗██║  ██║██║ ╚═╝ ██║███████╗    ║
+║              ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚══════╝    ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝    ║
+║                                                                                                      ║
+║                      ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ [PERSONNEL OVERVIEW]                                                                                │
+│                                                                                                     │
+│  CURRENT STAFF: 12 / 20 SLOTS    AVAILABLE FUNDS: 45 WEALTH    RECRUITMENT POINTS: 8             │
+│  MORALE INDEX: ████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  78%          │
+│                                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ [AVAILABLE RECRUITS]                                                                                │
+│                                                                                                     │
+│  ╔═════════════════════════════════════════════════════════════════════════════════════════════╗ │
+│  ║ CANDIDATE 001: ELEANOR VANCE                                                                     ║ │
+│  ╠═════════════════════════════════════════════════════════════════════════════════════════════╣ │
+│  ║ ROLE: CHIEF NEGOTIATOR    |    AFFILIATION: NONE (INDEPENDENT)    |    AGE: 45               ║ │
+│  ║                                                                                             ║ │
+│  ║ PORTRAIT:                                                                                    ║ │
+│  ║   ╔═══════════╗                                                                             ║ │
+│  ║   ║  ▄▀▀▀▀▄   ║                                                                             ║ │
+│  ║   ║ █ ●   ● █ ║                                                                             ║ │
+│  ║   ║  ▀▄▀▀▄▀   ║                                                                             ║ │
+│  ║   ║   ▀▀▀   ║                                                                             ║ │
+│  ║   ╚═══════════╝                                                                             ║ │
+│  ║                                                                                             ║ │
+│  ║ ATTRIBUTES:                                                                                  ║ │
+│  ║   CHARISMA      ████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  85%          ║ │
+│  ║   INTELLIGENCE  ████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  90%          ║ │
+│  ║   SCHEMING      ██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  50%          ║ │
+│  ║   INTEGRITY     ██████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░  95%          ║ │
+│  ║                                                                                             ║ │
+│  ║ SPECIALTIES:                                                                                 ║ │
+│  ║   ▸ DIPLOMATIC MASTERY: +25% treaty negotiation success                                       ║ │
+│  ║   ▸ TRUST BUILDER: +15% trust gain with all factions                                        ║ │
+│  ║   ▸ PUBLIC SPEAKING: +20% public opinion influence                                          ║ │
+│  ║                                                                                             ║ │
+│  ║ HIDDEN TRAITS:                                                                               ║ │
+│  ║   ▸ SECRET LOYALTY: Unknown (requires high Intelligence to uncover)                        ║ │
+│  ║   ▸ PERSONAL AGENDA: Reunite with estranged family (emotional leverage point)            ║ │
+│  ║                                                                                             ║ │
+│  ║ RECRUITMENT COST: 25 WEALTH + 10 REPUTATION                                                  ║ │
+│  ║ INITIAL LOYALTY: ████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  75%          ║ │
+│  ║ DEFECTION RISK: ███░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  12%           ║ │
+│  ║                                                                                             ║ │
+│  ║ RECOMMENDATION: ████████████████ [HIGH] - EXCEPTIONAL DIPLOMATIC ASSET                      ║ │
+│  ╚═════════════════════════════════════════════════════════════════════════════════════════════╝ │
+│                                                                                                     │
+│  ╔═════════════════════════════════════════════════════════════════════════════════════════════╗ │
+│  ║ CANDIDATE 002: "GHOST"                                                                          ║ │
+│  ╠═════════════════════════════════════════════════════════════════════════════════════════════╣ │
+│  ║ ROLE: SHADOW OPERATIVE    |    AFFILIATION: QUESTIONABLE    |    TRUE IDENTITY: UNKNOWN     ║ │
+│  ║                                                                                             ║ │
+│  ║ PORTRAIT:                                                                                    ║ │
+│  ║   ╔═══════════╗                                                                             ║ │
+│  ║   ║  ▄▄▄▄▄▄▄  ║                                                                             ║ │
+│  ║   ║ █   ▽   █ ║                                                                             ║ │
+│  ║   ║  ▄▀▀▀▀▄  ║                                                                             ║ │
+│  ║   ║   ▀▀▀▀   ║                                                                             ║ │
+│  ║   ╚═══════════╝                                                                             ║ │
+│  ║                                                                                             ║ │
+│  ║ ATTRIBUTES:                                                                                  ║ │
+│  ║   CHARISMA      ████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  25%          ║ │
+│  ║   INTELLIGENCE  ██████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░  92%          ║ │
+│  ║   SCHEMING      ██████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░  95%          ║ │
+│  ║   INTEGRITY     █░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  5%            ║ │
+│  ║                                                                                             ║ │
+│  ║ SPECIALTIES:                                                                                 ║ │
+│  ║   ▸ SHADOW NETWORK: Can recruit agents without detection                                    ║ │
+│  ║   ▸ BLACKMAIL SPECIALIST: Can extract information through leverage                         ║ │
+│  ║   ▸ IDENTITY MASKING: True allegiance unknown                                               ║ │
+│  ║                                                                                             ║ │
+│  ║ HIDDEN TRAITS:                                                                               ║ │
+│  ║   ▸ DUAL AGENT?: 40% probability of working for rival faction                               ║ │
+│  ║   ▸ SECRET DEBT: Owes significant favors to criminal organization                           ║ │
+│  ║   ▸ TRUE IDENTITY: Requires Intelligence 90+ to discover                                    ║ │
+│  ║                                                                                             ║ │
+│  ║ RECRUITMENT COST: 30 WEALTH + 15 INFORMATION                                                 ║ │
+│  ║ INITIAL LOYALTY: ██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  45%             ║ │
+│  ║ DEFECTION RISK: ████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  65%             ║ │
+│  ║                                                                                             ║ │
+│  ║ ⚠ WARNING: HIGH RISK - HIGH REWARD ASSET                                                      ║ │
+│  ║ RECOMMENDATION: ████████░░░░ [MEDIUM] - POTENTIAL COUNTER-INTELLIGENCE THREAT              ║ │
+│  ╚═════════════════════════════════════════════════════════════════════════════════════════════╝ │
+│                                                                                                     │
+│  ╔═════════════════════════════════════════════════════════════════════════════════════════════╗ │
+│  ║ CANDIDATE 003: COLONEL SUN WEI                                                                 ║ │
+│  ╠═════════════════════════════════════════════════════════════════════════════════════════════╣ │
+│  ║ ROLE: MILITARY COMMANDER    |    AFFILIATION: RETIRED ARMED FORCES    |    AGE: 58           ║ │
+│  ║                                                                                             ║ │
+│  ║ PORTRAIT:                                                                                    ║ │
+│  ║   ╔═══════════╗                                                                             ║ │
+│  ║   ║  ▄▀█▀▀█▄  ║                                                                             ║ │
+│  ║   ║ █ ●   ● █ ║                                                                             ║ │
+│  ║   ║  ▄█▀▀█▄  ║                                                                             ║ │
+│  ║   ║   █▀▀█   ║                                                                             ║ │
+│  ║   ╚═══════════╝                                                                             ║ │
+│  ║                                                                                             ║ │
+│  ║ ATTRIBUTES:                                                                                  ║ │
+│  ║   MILITARY       ████████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░  88%          ║ │
+│  ║   REPUTATION     ████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  60%          ║ │
+│  ║   CHARISMA       ████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  45%          ║ │
+│  ║   LOYALTY        ██████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░  85%          ║ │
+│  ║                                                                                             ║ │
+│  ║ SPECIALTIES:                                                                                 ║ │
+│  ║   ▸ MILITARY REFORM: Can modernize armed forces (+20 MILITARY per turn)                    ║ │
+│  ║   ▸ COMMAND AUTHORITY: +30% military operation success rate                                 ║ │
+│  ║   ▸ VETERAN NETWORK: Access to retired military officers                                    ║ │
+│  ║                                                                                             ║ │
+│  ║ HIDDEN TRAITS:                                                                               ║ │
+│  ║   ▸ PENSION DISPUTE: Government owes back pay (leverage point)                              ║ │
+│  ║   ▸ SON IN MILITARY: Family member in active service (loyalty anchor)                       ║ │
+│  ║                                                                                             ║ │
+│  ║ RECRUITMENT COST: 35 WEALTH + 20 INFLUENCE                                                    ║ │
+│  ║ INITIAL LOYALTY: ████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  80%            ║ │
+│  ║ DEFECTION RISK: ███░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  15%            ║ │
+│  ║                                                                                             ║ │
+│  ║ RECOMMENDATION: ██████████████████ [EXCEPTIONAL] - STRATEGIC MILITARY ASSET               ║ │
+│  ╚═════════════════════════════════════════════════════════════════════════════════════════════╝ │
+│                                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ [RECRUITMENT FILTERS]                                                                               │
+│                                                                                                     │
+│  ROLE TYPE:      [ALL ▾]        AVAILABILITY: [AVAILABLE ▾]        COST RANGE: [ANY ▾]           │
+│                                                                                                     │
+│  ATTRIBUTE MINIMUM:                                                                                │
+│    CHARISMA     [OFF]  INTELLIGENCE  [OFF]  SCHEMING      [OFF]  INTEGRITY     [OFF]            │
+│    MILITARY     [OFF]  REPUTATION    [OFF]  WEALTH        [OFF]  LOYALTY       [OFF]            │
+│                                                                                                     │
+│  SPECIALTY FILTER:                                                                                 │
+│    [DIPLOMACY]  [INTELLIGENCE]  [MILITARY]  [ECONOMICS]  [INFORMATION]  [NONE]                  │
+│                                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ [CURRENT STAFF ROSTER]                                                                              │
+│                                                                                                     │
+│  ▸ CHEN WEIMING      - CHIEF ADVISOR          - LOYALTY: ████████████████ 95%                  │
+│  ▸ SARAH JENKINS     - POLITICAL STRATEGIST   - LOYALTY: ████████████░░░ 78%                   │
+│  ▸ MINISTER ZHANG    - ECONOMIC DIRECTOR     - LOYALTY: ██████████████░░ 85%                   │
+│  ▸ COMMANDER TITAN   - SECURITY CHIEF        - LOYALTY: █████████████████ 100%                │
+│  ▸ AGENT NIGHTINGALE - INTELLIGENCE OFFICER  - LOYALTY: ████████████░░░░ 72%                   │
+│  ▸ DR. WU LIANG      - ECONOMIC ADVISOR      - LOYALTY: ██████████░░░░░ 65%                   │
+│  ▸ AGENT FALCON      - FIELD OPERATIVE       - LOYALTY: ████████░░░░░░░ 55%                   │
+│  ▸ AGENT SWORD       - COVERT OPERATOR       - LOYALTY: ███████████████░ 90%                  │
+│  ▸ MAYOR THORN       - LOCAL POLITICIAN      - LOYALTY: ██████░░░░░░░░░ 48%                   │
+│  ▸ JUDGE MERIDIAN    - LEGAL ADVISOR         - LOYALTY: ███████████░░░░ 70%                   │
+│  ▸ MINISTER QIN      - BUREAUCRAT            - LOYALTY: ██████████░░░░░ 62%                   │
+│  ▸ [VACANT]          - [UNASSIGNED]          - LOYALTY: ░░░░░░░░░░░░░░░  0%                   │
+│                                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ [RECRUITMENT CAMPAIGN]                                                                              │
+│                                                                                                     │
+│  CAMPAIGN NAME:        [____________________________]                                             │
+│  TARGET DEMOGRAPHIC:   [____________________________]                                             │
+│  BUDGET:               [██████████░░░░░░░░░░░░░░░░░░] 25 / 45 WEALTH AVAILABLE                  │
+│  DURATION:             [████████░░░░░░░░░░░░░░░░░░░] 5 TURNS                                    │
+│                                                                                                     │
+│  EXPECTED RESULTS:                                                                            │
+│    ▸ 3-5 NEW CANDIDATES IN PIPELINE                                                           │
+│    ▸ +10% PUBLIC AWARENESS OF YOUR FACTION                                                    │
+│    ▸ +5 REPUTATION (IF CAMPAIGN SUCCEEDS)                                                     │
+│                                                                                                     │
+│  RISK FACTORS:                                                                                  │
+│    ▸ 20% CHANCE OF TARGETED COUNTER-RECRUITMENT BY RIVAL FACTION                              │
+│    ▸ 15% CHANCE OF SCANDAL EXPOSURE (REDUCES REPUTATION BY 10)                                │
+│                                                                                                     │
+│  [►] LAUNCH CAMPAIGN    [S] SAVE FUNDS FOR TACTICAL RECRUITMENT    [ESC] CANCEL                │
+│                                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                                      ║
+║  [R] RECRUIT SELECTED    [C] CANCEL    [V] VIEW DETAILS    [F] FILTERS    [ESC] RETURN TO MAIN  ║
+║                                                                                                      ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════╝
