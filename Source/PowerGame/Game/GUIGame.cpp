@@ -3,7 +3,11 @@
 #include "../GUI/GameHUD.h"
 #include "../GUI/CharacterPanel.h"
 #include "../GUI/StoryEventPanel.h"
+#include "../GUI/FactionPanel.h"
+#include "../GUI/IntelligencePanel.h"
+#include "../GUI/SaveLoadPanel.h"
 #include "../GUI/TutorialSystem.h"
+#include "../Data/SaveManager.h"
 #include <iostream>
 
 namespace PowerGame {
@@ -43,6 +47,25 @@ public:
             MakeStoryChoice(nodeId, choiceId);
         });
 
+        factionPanel_ = std::make_unique<FactionPanel>(renderer);
+        factionPanel_->Initialize();
+        factionPanel_->SetCloseCallback([this]() { CloseFactionPanel(); });
+        factionPanel_->SetFormAllianceCallback([this](const std::string& factionId) {
+            FormAlliance(factionId);
+        });
+
+        intelPanel_ = std::make_unique<IntelligencePanel>(renderer);
+        intelPanel_->Initialize();
+        intelPanel_->SetCloseCallback([this]() { CloseIntelPanel(); });
+        intelPanel_->SetDeploySpyCallback([this]() { DeploySpy(); });
+
+        saveLoadPanel_ = std::make_unique<SaveLoadPanel>(renderer, false);
+        saveLoadPanel_->Initialize();
+        saveLoadPanel_->SetCloseCallback([this]() { CloseSaveLoadPanel(); });
+        saveLoadPanel_->SetLoadCallback([this](const std::string& saveId) {
+            LoadGameFromSave(saveId);
+        });
+
         ShowMainMenu();
     }
 
@@ -51,6 +74,9 @@ public:
         gameHUD_.reset();
         characterPanel_.reset();
         storyPanel_.reset();
+        factionPanel_.reset();
+        intelPanel_.reset();
+        saveLoadPanel_.reset();
     }
 
     void Update(float deltaTime) {
@@ -82,6 +108,9 @@ public:
     }
 
     void HandleEvent(const SDL_Event& event) {
+        if (saveLoadPanel_ && saveLoadPanel_->IsVisible() && saveLoadPanel_->HandleEvent(event)) return;
+        if (intelPanel_ && intelPanel_->IsVisible() && intelPanel_->HandleEvent(event)) return;
+        if (factionPanel_ && factionPanel_->IsVisible() && factionPanel_->HandleEvent(event)) return;
         if (storyPanel_ && storyPanel_->IsVisible() && storyPanel_->HandleEvent(event)) return;
         if (characterPanel_ && characterPanel_->IsVisible() && characterPanel_->HandleEvent(event)) return;
         if (gameHUD_ && gameHUD_->IsVisible() && gameHUD_->HandleEvent(event)) return;
@@ -110,8 +139,25 @@ public:
     }
 
     void LoadGame() {
-        // TODO: Implement save/load system
-        StartNewGame();
+        if (saveLoadPanel_) {
+            saveLoadPanel_->Show();
+        }
+    }
+
+    void LoadGameFromSave(const std::string& saveId) {
+        if (SaveManager::Instance().LoadGame(saveId)) {
+            gameState_ = GameState::Playing;
+            if (mainMenu_) mainMenu_->Hide();
+            if (gameHUD_) {
+                gameHUD_->Show();
+                UpdateHUD();
+            }
+            if (saveLoadPanel_) saveLoadPanel_->Hide();
+        }
+    }
+
+    void CloseSaveLoadPanel() {
+        if (saveLoadPanel_) saveLoadPanel_->Hide();
     }
 
     void OpenSettings() {
@@ -147,11 +193,35 @@ public:
     }
 
     void OpenFactionPanel() {
-        // TODO: Implement faction panel
+        if (factionPanel_) {
+            factionPanel_->Show();
+        }
+    }
+
+    void CloseFactionPanel() {
+        if (factionPanel_) factionPanel_->Hide();
+    }
+
+    void FormAlliance(const std::string& factionId) {
+        // TODO: Implement alliance formation logic
     }
 
     void OpenIntelPanel() {
-        // TODO: Implement intel panel
+        if (intelPanel_) {
+            intelPanel_->Show();
+        }
+    }
+
+    void CloseIntelPanel() {
+        if (intelPanel_) intelPanel_->Hide();
+    }
+
+    void DeploySpy() {
+        auto* intelMgr = GameSystemManager::Instance().GetSystem<IntelligenceManager>();
+        if (intelMgr) {
+            intelMgr->DeploySpy("Agent " + std::to_string(intelMgr->GetAllSpies().size() + 1),
+                               "conservatives", "liberals", 50.0f);
+        }
     }
 
     void MakeStoryChoice(const std::string& nodeId, const std::string& choiceId) {
@@ -215,6 +285,9 @@ private:
     std::unique_ptr<GameHUD> gameHUD_;
     std::unique_ptr<CharacterPanel> characterPanel_;
     std::unique_ptr<StoryEventPanel> storyPanel_;
+    std::unique_ptr<FactionPanel> factionPanel_;
+    std::unique_ptr<IntelligencePanel> intelPanel_;
+    std::unique_ptr<SaveLoadPanel> saveLoadPanel_;
 
     GameState gameState_ = GameState::MainMenu;
     bool running_ = true;
